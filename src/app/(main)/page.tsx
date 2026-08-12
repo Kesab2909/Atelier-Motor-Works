@@ -284,24 +284,24 @@ export default function Home() {
       </section>
 
       {/* 6. Collectors' Ledger — Auto Sliding Testimonial Rail */}
-<section className="py-[140px] bg-[#0B0B0B] border-t border-[#1F1F1F] overflow-hidden">
-  <div className="container mx-auto px-6 md:px-12 mb-14">
-    <span className="text-[#BFA37E] text-[10px] uppercase tracking-[0.3em] font-semibold block mb-4">
-      Collector Archive
-    </span>
+      <section className="py-[140px] bg-[#0B0B0B] border-t border-[#1F1F1F] overflow-hidden">
+        <div className="container mx-auto px-6 md:px-12 mb-14">
+          <span className="text-[#BFA37E] text-[10px] uppercase tracking-[0.3em] font-semibold block mb-4">
+            Collector Archive
+          </span>
 
-    <h2 className="font-serif text-5xl md:text-7xl text-[#F5F2EB] mb-6">
-      The Collectors' Ledger
-    </h2>
+          <h2 className="font-serif text-5xl md:text-7xl text-[#F5F2EB] mb-6">
+            The Collectors' Ledger
+          </h2>
 
-    <p className="text-[#C8C2B6] text-base md:text-lg leading-[1.8] max-w-2xl">
-      Eight collectors. Eight philosophies. Eight machines returned to life with
-      uncompromising discipline and historical integrity.
+          <p className="text-[#C8C2B6] text-base md:text-lg leading-[1.8] max-w-2xl">
+            Eight collectors. Eight philosophies. Eight machines returned to life with
+          uncompromising discipline and historical integrity.
     </p>
   </div>
 
-  <div className="relative">
-    <div className="flex gap-6 w-max animate-[marquee_45s_linear_infinite]">
+  <div className="relative testimonial-mask">
+  <div className="testimonial-track flex gap-6 w-max animate-[marquee_45s_linear_infinite]">
       {[...testimonials, ...testimonials].map((t, i) => (
         <div
           key={i}
@@ -336,15 +336,36 @@ export default function Home() {
   </div>
 
   <style jsx>{`
-    @keyframes marquee {
-      from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-50%);
-      }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
     }
-  `}</style>
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .testimonial-track:hover {
+    animation-play-state: paused;
+  }
+
+  .testimonial-mask {
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%
+    );
+  }
+`}</style>
 </section>
 
       {/* 7. Journal Preview */}
