@@ -34,13 +34,14 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
               className="relative h-[600px] w-full border border-brand-border"
             >
               <Image 
                 src="/images/gauges.jpg" 
                 alt="Founder in Workshop" 
                 fill 
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover grayscale" 
               />
             </motion.div>
@@ -49,7 +50,7 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 1.2, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             >
               <span className="text-brand-primary text-xs uppercase tracking-widest font-semibold mb-4 block">Genesis</span>
               <h2 className="font-serif text-4xl mb-6">Born from Obsession</h2>
@@ -89,10 +90,10 @@ export default function AboutPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.2 }}
+                transition={{ duration: 1.2, delay: i * 0.2, ease: [0.22, 1, 0.36, 1] }}
                 className="relative h-80 w-full"
               >
-                <Image src={img} alt={`Facility ${i+1}`} fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+                <Image src={img} alt={`Facility ${i+1}`} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover grayscale hover:grayscale-0 transition-all duration-[2000ms] ease-[cubic-bezier(0.22,1,0.36,1)]" />
               </motion.div>
             ))}
           </div>

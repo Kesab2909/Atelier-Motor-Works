@@ -3,14 +3,14 @@
     "slug": "commission-014",
     "title": "Commission 014",
     "vehicle": "1973 Porsche 911 Carrera RS",
-    "summary": "A full concourse-level restoration emphasizing mechanical purity and patina preservation.",
+    "summary": "A full concourse-level restoration emphasizing mechanical purity and patina preservation, representing an unbroken chain of horological provenance and obsessive mechanical re-engineering.",
     "duration": "16 months",
     "budget": "$125,000+",
-    "heroImage": "/images/hero.jpg",
+    "heroImage": "/images/commissions/commission-014/provenance.jpg",
     "gallery": [
-      "/images/philosophy.jpg",
-      "/images/metalwork.jpg",
-      "/images/engine.jpg"
+      "/images/commissions/commission-014/dashboard-restoration.jpg",
+      "/images/commissions/commission-014/engine-rebuild.jpg",
+      "/images/commissions/commission-014/fabrication.jpg"
     ],
     "specs": {
       "chassis": "Authentic '73 RS",
@@ -27,28 +27,158 @@
     "story": "Commission 014 arrived as a forgotten relic in a dusty barn. The goal wasn't just to rebuild it, but to resurrect its soul. We preserved the exterior patina while completely re-engineering the powertrain and chassis for modern reliability without sacrificing the analog driving experience.",
     "sections": [
       {
-        "heading": "Ownership History & Provenance",
-        "text": "Discovered in a temperature-controlled hangar in Geneva, Commission 014 arrived at our atelier as a matching-numbers rolling chassis. The vehicle had been off the road since 1989, preserved in a state of suspended animation by its second owner, a prominent Swiss horologist. The unbroken chain of ownership and original Swiss registration documents confirmed its elite status."
+        "heading": "Provenance",
+        "text": "The story of Commission 014 begins long before its chassis rolled onto the floor of Atelier North Motor Works. Originally delivered in April 1973 to an esteemed Swiss horologist residing in Geneva, this 1973 Porsche 911 Carrera RS was ordered in the vivid, unapologetic hue of Light Yellow (117), complete with the highly desirable touring package. For the first sixteen years of its life, it was driven with the exact mechanical sympathy and precision one might expect from a master watchmaker navigating the Alpine passes. The original documentation, bound in a weathered, scent-heavy leather portfolio, reveals a fanatical devotion to preventative maintenance that borders on obsession. Every valve adjustment, every oil change, and every microscopic calibration to the Bosch mechanical fuel injection system was logged with the exact date, mileage, and atmospheric pressure of the day. This wasn't merely a vehicle; it was an extension of its owner's pursuit of mechanical perfection. \n\nThe provenance of this chassis is virtually unassailable, providing a flawless foundation for what would become our most intensive and uncompromising restoration to date. The unbroken chain of ownership and the presence of the original Swiss registration documents confirmed its elite status among the dwindling population of matching-numbers RS models. To hold the original keys—their brass showing the soft wear of thousands of turns—and peruse the handwritten logs is to step back into a bygone era of analog motoring. It was a time when the connection between man and machine was direct, visceral, and unapologetically raw. As the decades passed, however, the car eventually fell out of regular use. In 1989, facing a changing world, it was carefully placed into a temperature-controlled hangar on the outskirts of Geneva, entering a state of suspended animation. It remained there, untouched and unseen, for over thirty years. The specialized lubricants settled into the sumps, the rubber seals perished under the slow march of time, but the unyielding soul of the machine remained entirely intact, waiting patiently for the right custodian to reawaken its dormant spirit.",
+        "image": "/images/commissions/commission-014/provenance.jpg",
+        "archivalCaption": "Original Swiss registration documents, Geneva, 1973.",
+        "pullQuote": "Every valve adjustment, every oil change... logged with the exact precision one might expect from a master watchmaker."
       },
       {
-        "heading": "Restoration Milestones & Timeline",
-        "text": "The project spanned 16 months of continuous labor, logged at 3,420 hours. \n\n• Month 1-2: Forensic teardown and chassis documentation.\n• Month 3-5: Media blasting and structural metalwork.\n• Month 6-9: Engine blueprinting and transaxle rebuild.\n• Month 10-12: Wiring harness fabrication and interior trimming.\n• Month 13-16: Final assembly, suspension tuning, and 500-mile shakedown."
+        "heading": "Discovery",
+        "text": "Our initial discovery of the vehicle was serendipitous, born of a quiet, months-long inquiry through our exclusive European network of archivists and collectors. A whispered lead directed our acquisition specialist to a non-descript hangar in Geneva. Unlocking the heavy steel doors revealed a literal time capsule: beneath a thick, undisturbed layer of dust lay Commission 014, sitting exactly as it had been parked three decades prior. The air inside the hangar smelled intensely of aged leatherette, evaporated high-octane fuel, and the distinct, irreplaceable scent of early Stuttgart engineering. The tires, originally fitted in the late eighties and perfectly preserved in their dry-rotted state, were flat, yet the structural integrity of the chassis appeared remarkably sound upon first inspection. \n\nThe Light Yellow paint, obscured by thirty years of atmospheric settling, hinted at the vibrant, high-revving life it once lived on the demanding Swiss roads. The significance of the find cannot be overstated in the context of modern collecting. A completely unmodified, unrestored, matching-numbers Carrera RS is the holy grail of air-cooled Porsche archiving. To find one with such a meticulously documented early life is a once-in-a-generation event that demands absolute reverence. We knew immediately that this vehicle required a highly sympathetic touch—a restoration philosophy that would not erase its hard-earned history, but rather, honor it through forensic preservation. The transport from Geneva to our North American atelier was executed with the utmost care, utilizing specialized climate-controlled logistics, custom-built transport cradles, and strict environmental monitoring to ensure no further degradation occurred during the transatlantic transit. It was not just moving a car; it was relocating an artifact.",
+        "image": "/images/commissions/commission-014/archive-garage.jpg",
+        "archivalCaption": "As discovered in a temperature-controlled hangar, suspended in time since 1989.",
+        "timeline": [
+          {
+            "date": "April 1973",
+            "event": "Original delivery to first owner in Geneva."
+          },
+          {
+            "date": "October 1989",
+            "event": "Placed into deep storage."
+          },
+          {
+            "date": "March 2025",
+            "event": "Rediscovered by Atelier North Motor Works."
+          }
+        ]
       },
       {
-        "heading": "Fabrication Photography & Metalwork",
-        "text": "Decades of exposure necessitated extensive structural intervention. The chassis was media-blasted to bare metal, revealing areas of oxidation in the longitudinals and suspension pickup points. Using factory-gauge steel and period-correct spot-welding techniques, we fabricated replacement panels that perfectly mimic the original factory seams. Every repair was lead-loaded, avoiding modern plastic fillers entirely."
+        "heading": "Condition Assessment",
+        "text": "Upon arrival at our atelier, the vehicle underwent a forensic condition assessment, an agonizingly detailed process spanning over 250 hours. Every square inch of the chassis, powertrain, and interior was cataloged, photographed under high-intensity lighting, and measured against original factory blueprints. We utilized ultrasonic thickness gauges to determine the exact state of the sheet metal beneath the original single-stage enamel, ensuring we knew exactly what lay beneath the surface before a single tool was lifted. While the Swiss climate had been relatively kind, thirty years of stagnation had inevitably taken a toll on the intricate assemblies. We identified isolated areas of galvanic corrosion near the suspension pickup points and minor galvanic oxidation in the longitudinal rocker panels—typical for a vehicle of this vintage, yet requiring absolute precision to correct.\n\nThe magnesium engine case, a well-known Achilles heel of the 2.7 RS due to its metallurgical properties, exhibited typical signs of age-related porosity and thermal fatigue, requiring specialized, aerospace-grade intervention. The complex wiring harness had become brittle, the insulation flaking away at the slightest touch, rendering the electrical system a critical liability. Yet, the core of the vehicle—the fundamental architecture that makes an RS so special—was gloriously untainted. There were no signs of accident damage, no hasty structural repairs, and no aftermarket modifications cluttering the engine bay. It was a blank, albeit dusty, canvas. Our assessment concluded that while a full, zero-hour mechanical rebuild was mandatory for safety, reliability, and performance, the exterior patina and interior character could be largely preserved. This approach would create a unique juxtaposition of flawless mechanical function and visible, authentic history.",
+        "image": "/images/commissions/commission-014/teardown.jpg",
+        "archivalCaption": "Forensic teardown and measurement of the chassis architecture.",
+        "pullQuote": "It was a blank, albeit dusty, canvas. The core of the vehicle was gloriously untainted."
       },
       {
-        "heading": "Engine Rebuild Documentation",
-        "text": "The beating heart of the RS, the 2.7-liter mechanically injected flat-six, required microscopic precision. The magnesium case was completely cleaned, measured, and line-bored back to zero-hour tolerances. The mechanical fuel injection (MFI) pump was recalibrated on a specialized flow bench to match the original factory delivery curves. Every fastener, bracket, and linkage was replated in period-correct yellow zinc or black oxide."
+        "heading": "Metal Reconstruction",
+        "text": "The metal reconstruction phase was approached with surgical precision and an unwavering commitment to coachbuilding authenticity. To address the localized corrosion without compromising the structural integrity or the original factory spot welds, we employed period-correct fabrication techniques exclusively. The chassis was securely mounted to a specialized Celette bench, utilizing factory-specified jigs to ensure absolute dimensional accuracy and zero distortion during the repair process. The affected areas in the longitudinals were carefully excised using specialized cutting tools that minimize heat transfer, and replacement panels were fabricated in-house using the exact gauge and carbon content of steel utilized by the factory in 1973.\n\nWe utilized sophisticated resistance spot welders, meticulously configured to replicate the original factory weld spacing, penetration depth, and visual signature. Every structural repair was meticulously lead-loaded—a time-consuming, highly toxic art that avoids the use of modern plastic body fillers entirely. This archaic technique ensures that the acoustic resonance of the chassis remains true to the original design, providing the exact tactile and auditory feedback intended by the engineers in Weissach. The front suspension pan, a common area for battery acid damage on early chassis, was replaced using an OEM Porsche stamping, seamlessly integrated into the existing structure using blind welds. The goal was not merely to repair the metal, but to render the repairs completely invisible to even the most discerning concourse judge armed with a flashlight and a mirror. Hundreds of hours were dedicated to planishing and metal finishing, ensuring that the repaired sections blended flawlessly with the surrounding, original steel. Following the structural repairs, the bare metal areas were treated with a specialized epoxy primer to provide long-term corrosion resistance, bridging the gap between vintage authenticity and modern longevity.",
+        "image": "/images/commissions/commission-014/fabrication.jpg",
+        "archivalCaption": "Period-correct spot welding and lead-loading on the longitudinal rocker panels.",
+        "timeline": [
+          {
+            "date": "Month 2",
+            "event": "Chassis mounted to Cellette bench."
+          },
+          {
+            "date": "Month 4",
+            "event": "Structural metalwork and lead-loading completed."
+          },
+          {
+            "date": "Month 5",
+            "event": "Epoxy primer and corrosion stabilization applied."
+          }
+        ]
       },
       {
-        "heading": "Paint and Leather Specifications",
-        "text": "While the exterior patina was largely preserved and stabilized, the interior required a complete re-trim. We sourced authentic, correct-grain black leatherette from Germany, matching the exact weight and texture used in 1973. The seat inserts feature genuine Perlon corduroy, and the headliner was replaced with the correct ivory perforated vinyl. The tactile interface—the steering wheel and shift knob—was wrapped in full-grain leather, providing the exact grip required to command the unassisted front end."
+        "heading": "Chassis and Suspension",
+        "text": "The chassis and suspension represent the dynamic interface between the vehicle, the driver, and the road. For Commission 014, we sought to retain the analog purity of the 1973 setup while subtly enhancing compliance and high-speed feedback. The original torsion bars, anti-roll bars, and trailing arms were removed, media blasted to bare metal, and subjected to rigorous crack-testing using aerospace dye penetrant inspection to ensure structural viability. Once cleared, they were refinished in the correct shade of satin black chassis paint, matching the original factory sheen perfectly.\n\nThe original Koni shock absorbers were sent to a specialized suspension facility for a complete internal rebuild. This process utilized modern, high-frequency valving technology completely concealed within the period-correct, stamped housings. This provides superior damping characteristics and bump compliance without altering the visual authenticity of the undercarriage. The suspension bushings were upgraded from the factory rubber—which inherently degrades over time—to a proprietary polyurethane blend, specifically formulated to reduce deflection under high cornering loads while actively avoiding the harshness typically associated with track-focused compounds. \n\nThe steering rack was completely disassembled, the internal gearing inspected under magnification, and reassembled with specialized aerospace-grade lubricants. The result is a steering feel that is telepathically direct, transmitting every nuance of the road surface directly to the driver's palms without unwanted kickback. The brake calipers were meticulously rebuilt, retaining their original anodized finish, and fitted with modern friction materials and custom-braided stainless steel lines that offer superior bite, modulation, and fade resistance during aggressive mountain driving.",
+        "image": "/images/commissions/commission-014/metalwork-detail.jpg",
+        "archivalCaption": "Refinished trailing arms and upgraded Koni dampers installed.",
+        "pullQuote": "A steering feel that is telepathically direct, transmitting every nuance of the road surface."
       },
       {
-        "heading": "Final Delivery & Valuation Statement",
-        "text": "Commission 014 was delivered to its new custodian in the fall of 2026. The vehicle was accompanied by a fully documented restoration dossier, authenticating every hour of labor and every replacement component. In its current state, it represents one of the most mechanically perfect, patina-preserved early 911s in existence. Independent appraisers have provided a conservative private valuation significantly exceeding the original build cost, cementing its status as an investment-grade artifact."
+        "heading": "Powertrain Rebuild",
+        "text": "The powertrain rebuild was undeniably the most intensive and nerve-wracking aspect of Commission 014. The matching-numbers Type 911/83 2.7-liter flat-six was entirely dismantled, categorized, and cataloged. The fragile magnesium crankcase was sent out for specialized ultrasonic cleaning, precise align-boring to correct decades of thermal distortion, and the installation of steel case savers—a mandatory reliability upgrade for these engines to prevent pulled head studs. The original crankshaft was magnafluxed for micro-fissures, polished, and micro-polished, then dynamically balanced alongside the connecting rods and pistons to a staggering tolerance of less than 0.5 grams, far exceeding factory specifications.\n\nWe sourced genuine Mahle Nikasil cylinders and forged pistons, maintaining the original 8.5:1 compression ratio to ensure compatibility with modern pump fuels while optimizing flame front propagation. The cylinder heads were completely rebuilt with new phosphor-bronze guides, lightweight valves, and performance springs capable of handling sustained high-RPM loads. \n\nThe mechanical fuel injection (MFI) system, the absolute crown jewel and beating heart of the RS engine, was entrusted to one of the few remaining masters of the Bosch system globally. The complex pump was recalibrated on a specialized flow bench to match the original factory fuel delivery curves perfectly across all RPM ranges. The entire assembly was meticulously detailed; every piece of hardware was replated in correct yellow zinc or black oxide, the fiberglass engine shroud was painstakingly restored to its original mottled texture, and the original decals were perfectly reproduced and applied. When the engine was finally fired on our dynamometer, it produced a healthy, verified 215 horsepower, exceeding the original factory claims while delivering an intoxicating, razor-sharp throttle response that modern fly-by-wire systems simply cannot emulate.",
+        "image": "/images/commissions/commission-014/engine-rebuild.jpg",
+        "archivalCaption": "The 2.7-liter Type 911/83 flat-six, blueprinted and dynamically balanced.",
+        "timeline": [
+          {
+            "date": "Month 6",
+            "event": "Magnesium case align-bored and sleeved."
+          },
+          {
+            "date": "Month 8",
+            "event": "MFI pump recalibrated to factory delivery curves."
+          },
+          {
+            "date": "Month 9",
+            "event": "Engine dyno validation: 215 horsepower."
+          }
+        ]
+      },
+      {
+        "heading": "Interior Preservation",
+        "text": "Interior preservation is a delicate, often misunderstood balancing act. Our objective was to meticulously retain the authentic smells, textures, and visual character of the original cabin while ensuring it was structurally sound and ergonomically usable. The original Pepita cloth (houndstooth) seat inserts were incredibly fragile after decades of static tension. Rather than discarding them for modern reproductions, we carefully removed them thread by thread, treated the natural fibers with a specialized archival conservation fluid to halt further deterioration, and reintegrated them into the newly bolstered sport seats.\n\nThe bolsters themselves were retrimmed in correct-grain black leatherette sourced directly from a heritage supplier in Germany, perfectly matching the specific weight, stretch, and sheen of the original 1973 material. The original dashboard, which had suffered minor sun damage, was stabilized using advanced polymer resins injected via microscopic syringes, preventing further cracking while retaining its historical, slightly imperfect patina. \n\nThe headliner was carefully cleaned using dry, chemical-free methods and re-tensioned, rather than replaced, intentionally preserving the subtle, organic discoloration above the driver's side window. The tactile points—the steering wheel rim and shift knob—were gently re-dyed and conditioned using natural oils, retaining the smooth, polished surface created by thousands of hours of the original owner's touch. The gauges were sent out for a full mechanical rebuild and calibration, but the faces were only lightly dusted, leaving the subtle yellowing of the numerals and the faded redlines completely intact. Sitting in the cabin of Commission 014 is not like sitting in a new car; it is an immersive, deeply emotional historical experience.",
+        "image": "/images/commissions/commission-014/dashboard-restoration.jpg",
+        "archivalCaption": "Preserved original gauges and re-tensioned headliner in the cabin.",
+        "pullQuote": "Sitting in the cabin is not like sitting in a new car; it is an immersive historical experience."
+      },
+      {
+        "heading": "Surface Development",
+        "text": "The surface development of Commission 014 was our most controversial, yet ultimately most rewarding, curatorial decision. Conventional restoration wisdom would dictate a bare-metal respray to achieve flawless perfection. However, the original single-stage Light Yellow paint possessed a depth, character, and narrative history that modern urethane clearcoats simply cannot replicate. We embarked on a painstaking, multi-week preservation process. The paint was carefully decontaminated using specialized, non-abrasive clay and pH-neutral archival solvents. \n\nWe then performed a microscopic, multi-stage correction process, utilizing ultra-fine abrasives and specialized polishing pads to remove deep oxidation and swirl marks without burning through the incredibly thin original finish, measuring the depth continuously. In areas where the paint had worn through to the primer—specifically around the door handles, the leading edge of the hood from road debris, and the rear flares from stone strikes—we made the deliberate choice to leave the history visible. \n\nWe sealed the entire body using a cutting-edge ceramic polymer coating, applied in a temperature-controlled booth. This microscopic layer locks in the patina and provides unparalleled UV protection, ensuring the finish will not degrade further. The result is a surface that gleams with a deep, historical luster. It is imperfect, yet entirely flawless in its authenticity. It wears its scars with pride, loudly telling the story of its early life on the Alpine roads. The original brightwork, including the delicate aluminum window frames and door handles, was carefully hand-polished, removing tarnish while leaving the microscopic scratches that attest to its age and usage.",
+        "image": "/images/commissions/commission-014/primer-stage.jpg",
+        "archivalCaption": "Multi-stage paint correction and ceramic stabilization of the original single-stage enamel.",
+        "timeline": [
+          {
+            "date": "Month 10",
+            "event": "Decontamination and microscopic paint correction."
+          },
+          {
+            "date": "Month 11",
+            "event": "Ceramic polymer sealing applied to lock in the patina."
+          }
+        ]
+      },
+      {
+        "heading": "Final Assembly",
+        "text": "Final assembly is the ultimate crucible where thousands of hours of disparate labor, engineering, and craftsmanship coalesce into a singular entity. It requires immense patience, surgical cleanliness, and an encyclopedic knowledge of the vehicle's original architecture. Every component, from the meticulously rebuilt engine to the preserved interior trim, was mated to the chassis with obsessive, measured care. \n\nThe wiring harness, fabricated entirely in-house to exact factory wiring diagrams utilizing modern, high-temperature wire concealed within correct, vintage-style braided loom, was routed precisely as it was in 1973, ensuring absolute electrical reliability without visual compromise. The mating of the powertrain to the chassis is a solemn event in our atelier—a marriage of mechanical perfection and structural integrity. The transaxle, a fully rebuilt and blueprinted Type 915/08 featuring new synchros and a shortened final drive, was mated to the engine, and the entire assembly was lifted into the chassis using custom fixtures to prevent scratching the preserved engine bay.\n\nThe suspension components were torqued to specification only under load to prevent bushing bind and premature wear. The oil lines, fuel lines, and brake lines were routed with geometric precision, utilizing the correct Adel clamps, grommets, and hardware. As the final exterior trim pieces were affixed and the iconic 'Carrera RS' decals were carefully applied to the flanks using original factory placement templates, the true majesty of Commission 014 was revealed. It was no longer a collection of parts on a shelf; it was a cohesive, breathing machine, ready to reclaim its rightful place on the road.",
+        "image": "/images/commissions/commission-014/inspection-polish.jpg",
+        "archivalCaption": "The meticulous mating of the powertrain to the restored chassis.",
+        "pullQuote": "It was no longer a collection of parts; it was a cohesive, breathing machine."
+      },
+      {
+        "heading": "Road Validation",
+        "text": "A museum-grade restoration is entirely worthless if the vehicle cannot perform dynamically as intended. Road validation is the final, critical step in our methodology, ensuring that the engineering matches the aesthetics. Commission 014 was subjected to a rigorous, uncompromising 500-mile shakedown protocol. We started with carefully monitored low-speed runs to seat the piston rings, bed the brake pads, and verify absolute fluid integrity across all systems. \n\nOnce the engine was properly broken in and the initial oil change performed, we progressively increased the loads, exploring the upper reaches of the rev range and the limits of the chassis dynamics on closed circuits. The mechanical fuel injection system required minute, iterative adjustments based on real-world telemetry to achieve the perfect idle and seamless transition under part-throttle. \n\nThe suspension geometry was meticulously fine-tuned on our laser alignment rack, dialing in the precise camber, caster, and toe settings required for optimal turn-in response and high-speed stability. The car was driven on varied surfaces—from smooth highways to broken canyon roads—to ensure the suspension damping was compliant yet fiercely controlled. The shifting action of the 915 transaxle was adjusted for maximum precision. The culmination of the validation process was a high-speed run at a private facility, where the RS effortlessly reached its original top speed, tracking perfectly straight and delivering the spine-tingling, metallic howl that only a mechanically injected air-cooled flat-six can produce at 7,000 RPM.",
+        "image": "/images/commissions/commission-014/beauty-detail.jpg",
+        "archivalCaption": "Suspension geometry dialing and high-speed shakedown on varied surfaces.",
+        "timeline": [
+          {
+            "date": "Month 14",
+            "event": "Initial 50-mile low-speed shakedown."
+          },
+          {
+            "date": "Month 15",
+            "event": "Suspension alignment and MFI fine-tuning."
+          },
+          {
+            "date": "Month 15.5",
+            "event": "High-speed validation and dynamic sign-off."
+          }
+        ]
+      },
+      {
+        "heading": "Delivery",
+        "text": "The delivery of Commission 014 was an emotional culmination of an exhaustive 16-month journey. The vehicle was formally presented to its new custodian at our atelier, deliberately illuminated under specialized detailing lights to highlight the stunning, preserved patina alongside the immaculate, zero-hour mechanical details. \n\nAccompanying the vehicle was a comprehensive restoration dossier—a heavy, leather-bound volume documenting every hour of labor, every replaced component, and the complete photographic history of the project from the dusty hangar in Geneva to the final ceramic polish. The dossier includes dyno sheets, laser alignment printouts, metallurgical reports from the fabrication phase, and the original Swiss registration documents. We spent hours with the new owner, walking them through the specific starting procedure of the MFI engine, explaining the delicate nuances of the 915 gearbox, and detailing the specific care requirements for maintaining the preserved exterior finish. \n\nWhen the original key was finally turned and the 2.7-liter engine barked into life, instantly filling the atelier with its unmistakable, aggressive mechanical symphony, the true value of the undertaking was realized. This was not merely the transfer of a financial asset; it was the passing of a torch. Commission 014 was ready for its next chapter, engineered to provide decades of analog driving pleasure while retaining every ounce of its historical soul.",
+        "image": "/images/commissions/commission-014/delivery.jpg",
+        "archivalCaption": "Presentation to the new custodian under specialized detailing lights.",
+        "pullQuote": "This was not merely the transfer of an asset; it was the passing of a torch."
+      },
+      {
+        "heading": "Legacy",
+        "text": "The legacy of Commission 014 extends far beyond our atelier walls, acting as a definitive statement on the ethics of automotive preservation. It stands as a testament to a specific, uncompromising philosophy of restoration—one that prioritizes historical integrity and mechanical purity over the sterile, over-restored perfection of a typical total concourse rebuild. It actively challenges the notion that an old car must be made 'new' again to be valuable. \n\nBy preserving the exterior patina, the interior wear, and the tactile history of the vehicle, while simultaneously re-engineering the mechanicals to zero-hour, blueprinted tolerances, we have created a machine that is deeply respectful of its past yet entirely prepared for its future. It is a rolling archive, a tangible, visceral link to a pivotal moment in automotive engineering history. \n\nCommission 014 has fundamentally redefined our approach to early 911s, proving irrefutably that sometimes, the most profound restorations are those where the craftsman knows exactly when to stop. It represents a paradigm shift in the upper echelons of the collector market, where authentic history and operational excellence are increasingly valued above flawless, artificial cosmetics. As it carves its way through modern traffic—a blur of Light Yellow and screaming magnesium—it serves as a loud, mechanical reminder that some legends are meant to be driven hard, not merely displayed in a static collection.",
+        "image": "/images/commissions/commission-014/final-reveal.jpg",
+        "archivalCaption": "Commission 014 standing as a rolling archive of mechanical purity.",
+        "timeline": [
+          {
+            "date": "Month 16",
+            "event": "Project completion and delivery."
+          },
+          {
+            "date": "Ongoing",
+            "event": "Preserved as an investment-grade automotive artifact."
+          }
+        ]
       }
     ],
     "isFeatured": true

@@ -8,6 +8,7 @@ import { ArrowRight } from "lucide-react";
 import settings from "@/data/settings.json";
 import projects from "@/data/projects.json";
 import articles from "@/data/articles.json";
+import testimonials from "@/data/testimonials.json";
 import CapacityIndicator from "@/components/ui/CapacityIndicator";
 import BeforeAfterSlider from "@/components/ui/BeforeAfterSlider";
 
@@ -76,10 +77,10 @@ export default function Home() {
             className="flex flex-col sm:flex-row gap-[24px] items-center"
           >
             <Link href="/contact" className="bg-[#BFA37E] text-[#0B0B0B] px-8 py-4 uppercase tracking-[0.2em] text-[10px] font-semibold hover:bg-[#F5F2EB] transition-colors duration-700">
-              Begin Commission
+              Begin the Commission Conversation
             </Link>
             <Link href="/work" className="text-[#F5F2EB] uppercase tracking-[0.2em] text-[10px] font-semibold border-b border-[#F5F2EB]/30 pb-1 hover:border-[#BFA37E] hover:text-[#BFA37E] transition-colors duration-700">
-              View The Study 
+              Examine the Archives 
             </Link>
           </motion.div>
           
@@ -129,8 +130,8 @@ export default function Home() {
             >
               <div className="relative h-[600px] w-full">
                 <Image 
-                  src="/images/macro.jpg" 
-                  alt="Workshop Philosophy Macro" 
+                  src="/images/workshop/workshop-bench.jpg" 
+                  alt="Workshop Craftsmanship" 
                   fill 
                   className="object-cover grayscale hover:grayscale-0 transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)]"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -175,9 +176,9 @@ export default function Home() {
               </Link>
             </div>
             <div className="col-span-4 md:col-span-4 flex flex-col justify-between mt-8 md:mt-0">
-              <div className="relative h-[40vh] w-full overflow-hidden mb-12 hidden md:block">
+              <div className="relative h-[40vh] w-full overflow-hidden mb-12 hidden md:block border border-[#BFA37E]/20">
                 <Image 
-                  src={featuredProject.gallery[0] || "/images/interior.jpg"} 
+                  src={featuredProject.gallery[0] || "/images/commissions/commission-014/dashboard-restoration.jpg"} 
                   alt="Commission Detail" 
                   fill 
                   className="object-cover grayscale"
@@ -216,8 +217,8 @@ export default function Home() {
           </div>
           <div className="max-w-6xl mx-auto border border-[#1F1F1F] p-4 bg-[#121212]">
             <BeforeAfterSlider 
-              beforeImage="/images/classic.jpg"
-              afterImage="/images/interior.jpg"
+              beforeImage="/images/restoration/bare-metal.jpg"
+              afterImage="/images/restoration/finishing.jpg"
             />
           </div>
         </div>
@@ -239,14 +240,14 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="editorial-grid gap-y-16">
+          <div className="editorial-grid gap-y-24">
             {[
-              { title: "Inspection", desc: "Forensic analysis of the chassis, mechanicals, and provenance.", img: "/images/inspection.jpg" },
-              { title: "Disassembly", desc: "Microscopic cataloging and labeling of every original fastener.", img: "/images/blur.jpg" },
-              { title: "Metalwork", desc: "Chassis reinforcement and rust eradication to millimeter tolerances.", img: "/images/welding.jpg" },
-              { title: "Powertrain", desc: "Engine blueprinting and transaxle recalibration.", img: "/images/engine.jpg" },
-              { title: "Finish", desc: "Period-correct materials and uncompromising reassembly.", img: "/images/finish.jpg" },
-              { title: "Validation", desc: "A rigorous 500-mile shakedown prior to certification.", img: "/images/grille.jpg" }
+              { title: "Inspection", desc: "Forensic analysis of the chassis, mechanicals, and provenance.", img: "/images/workshop/workshop-wide.jpg" },
+              { title: "Disassembly", desc: "Microscopic cataloging and labeling of every original fastener.", img: "/images/workshop/workshop-bench.jpg" },
+              { title: "Metalwork", desc: "Chassis reinforcement and rust eradication to millimeter tolerances.", img: "/images/workshop/workshop-metalwork.jpg" },
+              { title: "Fabrication", desc: "Coachbuilding techniques applied to preserve historical integrity.", img: "/images/workshop/workshop-welding.jpg" },
+              { title: "Powertrain", desc: "Engine blueprinting and transaxle recalibration.", img: "/images/workshop/workshop-engine-assembly.jpg" },
+              { title: "Finish", desc: "Period-correct materials and uncompromising reassembly.", img: "/images/workshop/workshop-upholstery.jpg" }
             ].map((step, i) => (
               <motion.div 
                 key={i}
@@ -254,22 +255,22 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 1, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                className="col-span-4 md:col-span-4 group cursor-pointer"
+                className="col-span-4 md:col-span-6 group cursor-pointer"
               >
-                <div className="relative h-[300px] mb-8 overflow-hidden">
+                <div className="relative h-[400px] mb-12 overflow-hidden">
                   <Image 
                     src={step.img} 
                     alt={step.title} 
                     fill 
                     className="object-cover grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[1500ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
-                  <div className="absolute top-4 left-4 text-[#BFA37E] font-mono text-sm tracking-tighter mix-blend-difference">
+                  <div className="absolute top-6 left-6 text-[#BFA37E] font-mono text-lg tracking-tighter mix-blend-difference">
                     0{i + 1}
                   </div>
                 </div>
-                <h3 className="font-serif text-2xl mb-4 text-[#F5F2EB]">{step.title}</h3>
-                <p className="text-[#C8C2B6] text-xs leading-[1.8]">{step.desc}</p>
+                <h3 className="font-serif text-3xl mb-4 text-[#F5F2EB]">{step.title}</h3>
+                <p className="text-[#C8C2B6] text-sm leading-[1.8] max-w-sm">{step.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -283,12 +284,12 @@ export default function Home() {
       </section>
 
       {/* 6. Testimonial Archive */}
-      <section className="py-[144px] bg-[#0B0B0B] relative overflow-hidden">
+      <section className="py-[160px] md:py-[240px] bg-[#0B0B0B] relative overflow-hidden">
         <div className="absolute top-0 bottom-0 left-1/2 w-[1px] bg-[#1F1F1F] -translate-x-1/2 hidden md:block"></div>
         
-        {/* Featured Testimonial */}
-        <div className="container mx-auto px-6 md:px-12 relative z-10 text-center max-w-4xl mb-32">
-          <div className="text-[#BFA37E] mb-12 flex justify-center">
+        {/* Featured Single Testimonial */}
+        <div className="container mx-auto px-6 md:px-12 relative z-10 text-center max-w-5xl">
+          <div className="text-[#BFA37E] mb-16 flex justify-center">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.017 21L16.411 14.593H10.222V3H21V12.084L15.918 21H14.017ZM4.819 21L7.213 14.593H1.024V3H11.802V12.084L6.719 21H4.819Z" />
             </svg>
@@ -298,105 +299,80 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-            className="font-serif text-3xl md:text-5xl leading-[1.3] text-[#F5F2EB] mb-12"
+            className="font-serif text-4xl md:text-6xl leading-[1.3] text-[#F5F2EB] mb-16"
           >
             "They talked me out of repainting the car. At first, I was furious. Now, I realize they saved the soul of my 911. They care more about the car than they do about your ego."
           </motion.h3>
-          <div>
-            <p className="uppercase tracking-[0.2em] text-[10px] font-semibold text-[#BFA37E] mb-2">Robert F.</p>
-            <p className="text-[#C8C2B6] text-[10px] uppercase tracking-[0.1em]">First-Time Collector — Commission 028</p>
-          </div>
-        </div>
-
-        {/* Editorial Testimonials Slider */}
-        <div className="relative z-10 w-full mt-12 md:mt-24 max-w-[100vw]">
-          {/* Edge Gradients */}
-          <div className="absolute top-0 bottom-0 left-0 w-8 md:w-32 bg-gradient-to-r from-[#0B0B0B] to-transparent z-20 pointer-events-none"></div>
-          <div className="absolute top-0 bottom-0 right-0 w-8 md:w-32 bg-gradient-to-l from-[#0B0B0B] to-transparent z-20 pointer-events-none"></div>
-
-          <div 
-            className="flex overflow-x-auto snap-x snap-mandatory gap-6 md:gap-12 px-6 md:px-[15vw] pb-12 cursor-grab active:cursor-grabbing"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
           >
-            <style dangerouslySetInnerHTML={{__html: `
-              div::-webkit-scrollbar { display: none; }
-            `}} />
-            {[
-              { quote: "It’s not just about turning wrenches. They understand the historical weight of what they are touching. Every decision is measured.", author: "Thomas H.", role: "Registry Member" },
-              { quote: "I’ve sent cars to the 'famous' shops. The difference here is the obsession. They don't have a quota; they have a standard.", author: "Marcus V.", role: "Commission 019" },
-              { quote: "The dossier they provided at delivery was a work of art in itself. It documented 800 hours of labor I couldn't see, but could feel.", author: "Elena R.", role: "Concours Winner" },
-              { quote: "You aren't just a client to them. You are a temporary custodian of the machine they rebuilt. They take that seriously.", author: "David P.", role: "Commission 031" },
-              { quote: "I waited three years for a slot. After the first drive, I would have waited ten.", author: "Jonathan M.", role: "Commission 014" },
-              { quote: "They preserved the patina perfectly. It looks like it survived, not like it was just built yesterday.", author: "Sarah L.", role: "Commission 022" },
-            ].map((t, i) => (
-              <motion.div 
-                key={i} 
-                initial={{ opacity: 0, x: 40 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 1.2, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                className="snap-center shrink-0 w-[85vw] md:w-[500px] border border-[#BFA37E]/20 bg-[#0E0E0E] p-8 md:p-12 relative group flex flex-col justify-between"
-              >
-                 <div className="absolute inset-0 opacity-[0.02] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDUiLz4KPHBhdGggZD0iTTAgMGg0djRIMHoiIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPgo8L3N2Zz4=')] pointer-events-none"></div>
-                 <p className="font-serif text-xl md:text-2xl leading-[1.6] text-[#F5F2EB] mb-12 group-hover:text-[#BFA37E] transition-colors duration-700">"{t.quote}"</p>
-                 <div>
-                   <p className="uppercase tracking-[0.2em] text-[10px] font-semibold text-[#BFA37E] mb-2">{t.author}</p>
-                   <p className="text-[#C8C2B6] text-[10px] uppercase tracking-[0.1em]">{t.role}</p>
-                 </div>
-              </motion.div>
-            ))}
-          </div>
+            <p className="uppercase tracking-[0.2em] text-[12px] font-semibold text-[#BFA37E] mb-3">Robert F.</p>
+            <p className="text-[#C8C2B6] text-[10px] uppercase tracking-[0.1em]">First-Time Collector — Commission 028</p>
+          </motion.div>
         </div>
       </section>
 
       {/* 7. Journal Preview */}
-      <section className="py-[144px] bg-[#121212] border-t border-[#1F1F1F]">
+      <section className="py-[160px] bg-[#0B0B0B] border-t border-[#1F1F1F]">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="editorial-grid items-end mb-[96px]">
-            <div className="col-span-4 md:col-span-8">
-              <h2 className="font-serif text-5xl md:text-6xl text-[#F5F2EB]">The Archives</h2>
-            </div>
-            <div className="col-span-4 md:col-span-4 flex md:justify-end mt-8 md:mt-0">
-              <Link href="/journal" className="group flex items-center gap-3 text-[#C8C2B6] uppercase tracking-[0.2em] text-[10px] font-semibold hover:text-[#BFA37E] transition-colors duration-700">
-                View All Publications <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]" />
-              </Link>
-            </div>
+          <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-[#1F1F1F] pb-8">
+            <h2 className="font-serif text-5xl md:text-7xl text-[#F5F2EB]">The Archives</h2>
+            <Link href="/journal" className="group flex items-center gap-3 text-[#C8C2B6] uppercase tracking-[0.2em] text-[10px] font-semibold hover:text-[#BFA37E] transition-colors duration-700 mt-8 md:mt-0">
+              Read All Volumes <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]" />
+            </Link>
           </div>
 
-          <div className="editorial-grid">
-            {articles.slice(0, 2).map((article, i) => (
-              <Link href={`/journal/${article.slug}`} key={i} className="col-span-4 md:col-span-6 group block">
-                <div className="relative h-[400px] md:h-[600px] w-full mb-8 overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-24">
+            {/* Featured Article */}
+            <div className="md:col-span-7">
+              <Link href={`/journal/${articles[0].slug}`} className="group block">
+                <div className="relative h-[50vh] md:h-[70vh] w-full mb-8 overflow-hidden">
                   <Image 
-                    src={article.image} 
-                    alt={article.title} 
+                    src={articles[0].image} 
+                    alt={articles[0].title} 
                     fill 
                     className="object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-[2000ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
-                    sizes="(max-width: 768px) 100vw, 50vw"
+                    sizes="(max-width: 768px) 100vw, 60vw"
                   />
                 </div>
-                <div className="flex items-center gap-6 text-[#C8C2B6] text-[9px] uppercase tracking-[0.2em] mb-6">
-                  <span>{article.date}</span>
-                  <div className="w-12 h-[1px] bg-[#BFA37E]/30"></div>
-                  <span>4 Min Read</span>
+                <div className="flex items-center gap-6 text-[#C8C2B6] text-[9px] uppercase tracking-[0.2em] mb-4">
+                  <span>{articles[0].date}</span>
+                  <div className="w-8 h-[1px] bg-[#BFA37E]/50"></div>
+                  <span className="text-[#BFA37E]">Vol. I</span>
                 </div>
-                <h3 className="font-serif text-3xl md:text-4xl mb-6 text-[#F5F2EB] group-hover:text-[#BFA37E] transition-colors duration-700 leading-tight pr-8">{article.title}</h3>
-                <p className="text-[#C8C2B6] text-sm leading-[1.8] max-w-md">{article.excerpt}</p>
+                <h3 className="font-serif text-4xl md:text-5xl mb-6 text-[#F5F2EB] group-hover:text-[#BFA37E] transition-colors duration-700 leading-[1.1]">{articles[0].title}</h3>
+                <p className="text-[#C8C2B6] text-sm md:text-base leading-[1.8] max-w-lg">{articles[0].excerpt}</p>
               </Link>
-            ))}
+            </div>
+
+            {/* Secondary Articles List */}
+            <div className="md:col-span-5 flex flex-col justify-start">
+              {articles.slice(1, 4).map((article, i) => (
+                <Link href={`/journal/${article.slug}`} key={i} className="group block border-b border-[#1F1F1F] py-8 first:pt-0">
+                  <div className="flex items-center gap-6 text-[#C8C2B6] text-[9px] uppercase tracking-[0.2em] mb-3">
+                    <span>{article.date}</span>
+                  </div>
+                  <h3 className="font-serif text-2xl mb-4 text-[#F5F2EB] group-hover:text-[#BFA37E] transition-colors duration-700 leading-tight">{article.title}</h3>
+                  <p className="text-[#C8C2B6] text-xs leading-[1.6] line-clamp-3">{article.excerpt}</p>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* 8. Final CTA */}
-      <section className="py-[144px] md:py-[200px] bg-[#0B0B0B] text-center px-6">
+      <section className="py-[160px] md:py-[240px] bg-[#0B0B0B] text-center px-6">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           <span className="text-[#BFA37E] text-[10px] uppercase tracking-[0.3em] font-semibold mb-8 block">Appointment Only</span>
           <h2 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-16 text-[#F5F2EB] leading-[1.1] tracking-tight">
             Resurrect your <span className="italic text-[#C8C2B6]">legacy.</span>
           </h2>
           <Link href="/contact" className="bg-[#F5F2EB] text-[#0B0B0B] px-12 py-6 uppercase tracking-[0.2em] text-[10px] font-semibold hover:bg-[#BFA37E] hover:text-[#0B0B0B] transition-colors duration-700">
-            Submit Commission Inquiry
+            Request Private Consultation
           </Link>
         </div>
       </section>

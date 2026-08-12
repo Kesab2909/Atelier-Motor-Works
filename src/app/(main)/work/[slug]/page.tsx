@@ -103,9 +103,10 @@ export default function WorkDetailPage() {
       </section>
 
       {/* 3. Story */}
-      <section className="py-[144px]">
+      <section className="py-[160px]">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="editorial-grid">
+          {/* Brief */}
+          <div className="editorial-grid mb-[160px]">
             <div className="col-span-4 md:col-span-4 mb-16 md:mb-0">
               <span className="text-brand-primary text-[10px] uppercase tracking-[0.2em] font-semibold mb-6 block">The Brief</span>
               <button 
@@ -117,35 +118,82 @@ export default function WorkDetailPage() {
               </button>
             </div>
             <div className="col-span-4 md:col-span-8">
-              <p className="text-brand-text text-2xl md:text-3xl leading-[1.6] font-serif mb-16 tracking-tight">
+              <p className="text-brand-text text-3xl md:text-5xl leading-[1.4] font-serif tracking-tight">
                 {project.summary}
               </p>
-              
-              {project.sections && project.sections.length > 0 ? (
-                <div className="space-y-[96px]">
-                  {project.sections.map((section: any, idx: number) => (
-                    <motion.div 
-                      key={idx}
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true, margin: "-100px" }}
-                      transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-                    >
-                      <h3 className="font-serif text-3xl mb-8 text-brand-text">{section.heading}</h3>
-                      <div className="w-12 h-[1px] bg-brand-primary/30 mb-8"></div>
-                      <p className="text-brand-muted leading-[2] text-sm md:text-base max-w-2xl">
-                        {section.text}
-                      </p>
-                    </motion.div>
-                  ))}
-                </div>
-              ) : (
-                <p className="text-brand-muted leading-[2] max-w-2xl">
-                  {project.story}
-                </p>
-              )}
             </div>
           </div>
+
+          {/* Chapters */}
+          {project.sections && project.sections.length > 0 ? (
+            <div className="space-y-[160px] md:space-y-[240px]">
+              {project.sections.map((section: any, idx: number) => (
+                <motion.div 
+                  key={idx}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+                  className="editorial-grid items-start"
+                >
+                  {/* Chapter Heading (Left) */}
+                  <div className="col-span-4 md:col-span-4 md:sticky md:top-32 mb-12 md:mb-0 pr-8">
+                    <span className="text-brand-muted text-[10px] uppercase tracking-[0.2em] mb-4 block">Chapter {String(idx + 1).padStart(2, '0')}</span>
+                    <h3 className="font-serif text-4xl md:text-6xl mb-8 text-brand-text leading-[1.1]">{section.heading}</h3>
+                    <div className="w-12 h-[1px] bg-brand-primary/30"></div>
+                  </div>
+                  
+                  {/* Chapter Content (Right) */}
+                  <div className="col-span-4 md:col-span-8">
+                    {section.image && (
+                      <div className="mb-16 relative w-full h-[50vh] md:h-[70vh]">
+                        <Image src={section.image} alt={section.heading} fill className="object-cover grayscale hover:grayscale-0 transition-all duration-[2000ms] ease-[cubic-bezier(0.22,1,0.36,1)]" sizes="(max-width: 768px) 100vw, 66vw" />
+                        {section.archivalCaption && (
+                          <p className="absolute bottom-4 left-4 bg-brand-bg/90 p-4 text-[10px] uppercase tracking-[0.2em] text-brand-muted max-w-sm">
+                            {section.archivalCaption}
+                          </p>
+                        )}
+                      </div>
+                    )}
+
+                    <div className="text-[#C8C2B6] leading-[2.2] text-sm md:text-base space-y-8">
+                      {section.text.split('\n\n').map((paragraph: string, pIdx: number) => (
+                        <p key={pIdx} className="max-w-3xl">{paragraph}</p>
+                      ))}
+                    </div>
+
+                    {section.pullQuote && (
+                      <blockquote className="my-20 border-l border-brand-primary pl-8 max-w-3xl">
+                        <p className="font-serif text-3xl md:text-4xl text-brand-text italic leading-[1.3]">"{section.pullQuote}"</p>
+                      </blockquote>
+                    )}
+
+                    {section.timeline && section.timeline.length > 0 && (
+                      <div className="mt-20 bg-brand-surface p-8 md:p-12 border border-brand-border">
+                        <h4 className="text-[10px] uppercase tracking-[0.2em] font-semibold text-brand-primary mb-8 block">Archival Timeline</h4>
+                        <ul className="space-y-6">
+                          {section.timeline.map((item: any, tIdx: number) => (
+                            <li key={tIdx} className="flex flex-col md:flex-row gap-4 border-b border-brand-border pb-6 last:border-0 last:pb-0">
+                              <span className="font-serif text-brand-text min-w-[120px]">{item.date}</span>
+                              <span className="text-brand-muted text-sm">{item.event}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          ) : (
+            <div className="editorial-grid">
+               <div className="col-span-4 md:col-start-5 md:col-span-8">
+                 <p className="text-[#C8C2B6] leading-[2.2] max-w-2xl text-lg">
+                   {project.story}
+                 </p>
+               </div>
+            </div>
+          )}
         </div>
       </section>
 
@@ -178,11 +226,11 @@ export default function WorkDetailPage() {
       )}
 
       {/* 5. CTA */}
-      <section className="py-[144px] bg-brand-bg text-center border-t border-brand-border">
-        <span className="text-brand-primary text-[10px] uppercase tracking-[0.2em] font-semibold mb-6 block">Ready?</span>
-        <h2 className="font-serif text-5xl md:text-6xl mb-12 text-brand-text">Envision Your Commission</h2>
-        <Link href="/contact" className="inline-block bg-brand-text text-brand-bg px-10 py-5 uppercase tracking-[0.2em] text-[10px] font-semibold hover:bg-brand-primary transition-colors duration-700">
-          Inquire Now
+      <section className="py-[160px] md:py-[240px] bg-brand-bg text-center border-t border-brand-border">
+        <span className="text-brand-primary text-[10px] uppercase tracking-[0.3em] font-semibold mb-8 block">Appointment Only</span>
+        <h2 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-16 text-brand-text leading-[1.1] tracking-tight">Begin the Commission <span className="italic text-brand-muted">Conversation.</span></h2>
+        <Link href="/contact" className="inline-block bg-brand-text text-brand-bg px-12 py-6 uppercase tracking-[0.2em] text-[10px] font-semibold hover:bg-brand-primary transition-colors duration-700">
+          Request Private Consultation
         </Link>
       </section>
     </div>

@@ -21,14 +21,13 @@ export default function Footer() {
             <h4 className="font-serif text-xl mb-6 text-brand-text">Atelier</h4>
             <ul className="space-y-4 text-sm text-brand-muted">
               <li>{settings.location}</li>
-              <li>{settings.phone}</li>
               <li>
                 <a href={`mailto:${settings.email}`} className="hover:text-brand-primary transition-colors duration-300">
                   {settings.email}
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-brand-primary transition-colors duration-300">
+                <a href="/" className="hover:text-brand-primary transition-colors duration-300">
                   {settings.instagram}
                 </a>
               </li>
@@ -36,20 +35,29 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-serif text-xl mb-6 text-brand-text">Navigate</h4>
+            <h4 className="font-serif text-xl mb-6 text-brand-text">Archive</h4>
             <ul className="space-y-4 text-sm text-brand-muted">
               <li>
-                <Link href="/work" className="hover:text-brand-primary transition-colors duration-300">Work</Link>
+                <Link href="/work" className="hover:text-brand-primary transition-colors duration-300">Archive</Link>
               </li>
               <li>
-                <Link href="/process" className="hover:text-brand-primary transition-colors duration-300">Process</Link>
+                <Link href="/process" className="hover:text-brand-primary transition-colors duration-300">Restoration Ritual</Link>
               </li>
               <li>
-                <Link href="/journal" className="hover:text-brand-primary transition-colors duration-300">Journal</Link>
+                <Link href="/journal" className="hover:text-brand-primary transition-colors duration-300">Workshop Journal</Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-brand-primary transition-colors duration-300">About</Link>
+                <Link href="/about" className="hover:text-brand-primary transition-colors duration-300">Atelier</Link>
               </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-serif text-xl mb-6 text-brand-text">Status</h4>
+            <ul className="space-y-4 text-sm text-brand-muted">
+              <li>Annual Capacity: 18</li>
+              <li>Remaining: 3</li>
+              <li>Next Opening: Spring 2027</li>
             </ul>
           </div>
 

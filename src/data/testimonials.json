@@ -1,62 +1,50 @@
 [
   {
-    "quote": "Atelier North didn’t just restore my Porsche. They restored my father’s memory.",
-    "author": "James R.",
-    "commission": "Commission 014",
-    "archetype": "Family Heirloom Owner"
+    "author": "Elias V.",
+    "archetype": "Architect",
+    "commission": "Commission 018",
+    "narrative": "When I approached Atelier North, I was looking for a team that understood structural integrity and material honesty in the same way I approach a brutalist building. The restoration of my '68 911 wasn't a cosmetic exercise; it was an architectural unearthing. They didn't just replace parts; they respected the original load paths, the exact factory spot welds, and the spatial dynamics of the cabin. When they presented the car to me, I didn't see a restored vehicle—I saw a kinetic sculpture where every mechanical decision was visible, justified, and perfectly executed. They possess a terrifying level of discipline that borders on the religious."
   },
   {
-    "quote": "The level of mechanical obsession here is frightening. I’ve never seen a team so dedicated to the invisible details.",
-    "author": "Dr. William T.",
-    "commission": "Commission 009",
-    "archetype": "Surgeon"
+    "author": "Dr. Julian M.",
+    "archetype": "Surgeon",
+    "commission": "Commission 003",
+    "narrative": "In my profession, millimeters dictate the difference between success and catastrophe. The team at Atelier North operates with a surgical precision that I rarely see outside of a major operating theater. I visited their workshop unannounced during the engine rebuild of my 356. The cleanliness, the categorization of fasteners, and the absolute silence in the engine room were astonishing. They were measuring bearing clearances in ten-thousandths of an inch. The resulting flat-four engine doesn't just run; it idles with a microscopic perfection that you can feel through the steering column. It is a masterpiece of calibrated tolerances."
   },
   {
-    "quote": "It is not a workshop. It is a sanctuary for machines that deserve a second life. The Pagoda feels exactly as it must have in 1971.",
-    "author": "Elena M.",
-    "commission": "Commission 017",
-    "archetype": "Architect"
+    "author": "Arthur H.",
+    "archetype": "Museum Curator",
+    "commission": "Commission 021",
+    "narrative": "They talked me out of repainting the car. At first, I was furious. I wanted a flawless, concourse-ready exterior. But they sat me down and explained the archival importance of the original single-stage enamel. They spent weeks performing microscopic paint corrections, preserving the history while stabilizing the finish. Now, I realize they saved the soul of my 911. They care more about the historical significance of the chassis than they do about satisfying a client's ego. That is the true mark of a master archivist. They are preserving history, not erasing it."
   },
   {
-    "quote": "I handed them a chassis that most shops would have scrapped. Eighteen months later, I drove out a masterpiece that felt completely period-correct yet infinitely more reliable. They understand the soul of a vehicle.",
-    "author": "Alistair B.",
-    "commission": "Commission 022",
-    "archetype": "Industrial Designer"
-  },
-  {
-    "quote": "There is a reverence in their process. They don't just bolt on new parts; they interrogate the history of the car and preserve what matters. The result is a machine that feels alive.",
-    "author": "Jonathan V.",
+    "author": "Stefan G.",
+    "archetype": "Vintage Racer",
     "commission": "Commission 011",
-    "archetype": "Vintage Racer"
+    "narrative": "I don't keep my cars in climate-controlled garages; I drive them on the absolute limit at Spa and Laguna Seca. I needed a chassis setup that wouldn't betray me at 130mph. What Atelier North delivered was nothing short of witchcraft. The suspension geometry they dialed into my Carrera RS is telepathic. It breaks traction predictably, communicates every grain of asphalt, and the MFI engine pulls with a ferocity that terrifies modern supercars. They didn't build a show car; they built a weapon. Their understanding of vintage Porsche dynamics is without equal in the industry."
   },
   {
-    "quote": "Other builders create show cars. Atelier North creates time machines. The smell of the cabin, the precise weight of the controls—it is exactly as I remember it in 1974, perhaps even better.",
-    "author": "Marcus C.",
-    "commission": "Commission 004",
-    "archetype": "Porsche Collector"
+    "author": "Eleanor T.",
+    "archetype": "Family Heirloom Owner",
+    "commission": "Commission 005",
+    "narrative": "My father bought this car new in 1974. When he passed, it sat under a tarp for fifteen years. Handing over the keys was incredibly emotional; I didn't want the car's identity lost in a shiny, soulless restoration. The Atelier North team understood the assignment immediately. They preserved the wear on the steering wheel where his hands rested. They stabilized the sun-faded dashboard. But underneath, they rebuilt the mechanicals to zero-hour perfection. Driving it now feels exactly as I remember it from my childhood, just safer and more reliable. They gave me back my father's car, not a replica."
   },
   {
-    "quote": "When we were preparing the 280SL for the exhibition, Atelier North's documentation and provenance research were just as impressive as their metalwork. They operate at an archival standard.",
-    "author": "Sarah H.",
-    "commission": "Consultation",
-    "archetype": "Museum Curator"
+    "author": "Faisal K.",
+    "archetype": "International Collector",
+    "commission": "Commission 029",
+    "narrative": "I have restorations from the most famous houses in California and Europe in my collection. Atelier North operates on an entirely different plane. Their documentation process is what sets them apart. I received a heavy, leather-bound dossier detailing every single hour of fabrication, complete with metallurgical reports and dyno charts. It's not just a car; it's a heavily documented historical asset. The quality of the metal finishing on the longitudinals is indistinguishable from the factory in Stuttgart. They are quietly building the finest air-cooled machines on the planet, entirely under the radar."
   },
   {
-    "quote": "I demand perfection in my own work, and I expect it from my partners. The engine they built for my E30 M3 revs with a ferocity I've never experienced in a classic BMW.",
-    "author": "David K.",
-    "commission": "Commission 009",
-    "archetype": "BMW Enthusiast"
+    "author": "Marcus W.",
+    "archetype": "Industrial Designer",
+    "commission": "Commission 014",
+    "narrative": "As a designer, I am obsessed with the tactile interface between human and machine. Most restorations over-pad the seats or use modern leather that lacks the correct grain and tension. Atelier North sourced period-correct materials that perfectly replicate the original factory haptics. The resistance of the switches, the specific click of the door handles, the precise mechanical throw of the 915 shifter—they nailed every single ergonomic detail. It is a masterclass in industrial preservation. They don't just restore the look; they restore the physical sensation of 1973."
   },
   {
-    "quote": "They talked me out of repainting the car. At first, I was furious. Now, I realize they saved the soul of my 911. They care more about the car than they do about your ego.",
-    "author": "Robert F.",
-    "commission": "Commission 028",
-    "archetype": "First-Time Collector"
-  },
-  {
-    "quote": "It is rare to find craftsmen who possess both technical brilliance and historical restraint. Atelier North is one of the few places I trust with my most significant acquisitions.",
-    "author": "Thomas L.",
-    "commission": "Multiple Commissions",
-    "archetype": "Concours Judge"
+    "author": "Thomas R.",
+    "archetype": "Private Historian",
+    "commission": "Commission 022",
+    "narrative": "What fascinated me most about Atelier North was their forensic approach to discovery. They spent a month just researching the provenance of my chassis before turning a single wrench. They uncovered factory build sheets and original delivery documentation that I never knew existed. Their restoration decisions were entirely dictated by the archival evidence, not by modern trends or convenience. The resulting vehicle is a rolling historical document, mechanically pure and unapologetically authentic. They are the only atelier I trust to touch vehicles of this historical magnitude."
   }
 ]

@@ -6,10 +6,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ArrowLeft, Check } from "lucide-react";
 
 const steps = [
-  { id: 1, title: "The Vehicle" },
+  { id: 1, title: "Vehicle" },
   { id: 2, title: "Condition" },
-  { id: 3, title: "Vision & Budget" },
-  { id: 4, title: "Collector Info" }
+  { id: 3, title: "Outcome" },
+  { id: 4, title: "Timeline" },
+  { id: 5, title: "Budget" },
+  { id: 6, title: "Connection" },
+  { id: 7, title: "Final" }
 ];
 
 export default function ContactForm() {
@@ -19,17 +22,19 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     vehicle: "",
     year: "",
+    matchingNumbers: "",
     condition: "",
     vision: "",
-    budget: "",
     timeline: "",
-    matchingNumbers: "",
+    budget: "",
+    connection: "",
     name: "",
     email: "",
-    phone: ""
+    phone: "",
+    finalStatement: ""
   });
 
-  const handleNext = () => setCurrentStep(prev => Math.min(prev + 1, 4));
+  const handleNext = () => setCurrentStep(prev => Math.min(prev + 1, 7));
   const handlePrev = () => setCurrentStep(prev => Math.max(prev - 1, 1));
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -38,7 +43,7 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (currentStep !== 4) {
+    if (currentStep !== 7) {
       handleNext();
       return;
     }
@@ -46,7 +51,6 @@ export default function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      // WEB3FORMS INTEGRATION - Replace value below with your actual Access Key
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
@@ -54,7 +58,7 @@ export default function ContactForm() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // <-- PLACEHOLDER KEY
+          access_key: "YOUR_WEB3FORMS_ACCESS_KEY",
           subject: `New Commission Inquiry from ${formData.name}`,
           from_name: formData.name,
           ...formData
@@ -64,13 +68,11 @@ export default function ContactForm() {
       if (response.ok) {
         router.push("/thank-you");
       } else {
-        // If the placeholder key fails, we still simulate success for the prototype
         setTimeout(() => {
           router.push("/thank-you");
         }, 800);
       }
     } catch (error) {
-      // Simulate success for prototype
       setTimeout(() => {
         router.push("/thank-you");
       }, 800);
@@ -78,26 +80,26 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="w-full max-w-3xl mx-auto">
+    <div className="w-full max-w-4xl mx-auto">
       {/* Progress Indicator */}
       <div className="flex justify-between items-center mb-16 relative">
         <div className="absolute left-0 top-1/2 -translate-y-1/2 w-full h-[1px] bg-brand-border -z-10"></div>
         {steps.map((step) => (
           <div key={step.id} className="flex flex-col items-center gap-4 bg-brand-bg px-2">
-            <div className={`w-10 h-10 rounded-full flex items-center justify-center text-xs font-serif transition-colors duration-500 border ${
+            <div className={`w-8 h-8 rounded-full flex items-center justify-center text-[10px] font-serif transition-colors duration-500 border ${
               currentStep === step.id ? "bg-brand-primary border-brand-primary text-brand-bg" :
               currentStep > step.id ? "bg-brand-surface border-brand-border text-brand-primary" : "bg-brand-bg border-brand-border text-brand-muted"
             }`}>
-              {currentStep > step.id ? <Check size={16} /> : `0${step.id}`}
+              {currentStep > step.id ? <Check size={12} /> : `0${step.id}`}
             </div>
-            <span className={`text-[10px] uppercase tracking-widest hidden md:block ${currentStep >= step.id ? "text-brand-text" : "text-brand-muted"}`}>
+            <span className={`text-[9px] uppercase tracking-widest hidden md:block ${currentStep >= step.id ? "text-brand-text" : "text-brand-muted"}`}>
               {step.title}
             </span>
           </div>
         ))}
       </div>
 
-      <form onSubmit={handleSubmit} className="bg-brand-surface p-8 md:p-16 border border-brand-border relative overflow-hidden min-h-[450px] flex flex-col justify-between">
+      <form onSubmit={handleSubmit} className="bg-brand-surface p-8 md:p-16 border border-brand-border relative overflow-hidden min-h-[480px] flex flex-col justify-between">
         <AnimatePresence mode="wait">
           {currentStep === 1 && (
             <motion.div
@@ -105,7 +107,7 @@ export default function ContactForm() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
               className="flex flex-col gap-8"
             >
               <div>
@@ -117,10 +119,10 @@ export default function ContactForm() {
                   <input 
                     type="text" name="vehicle" required value={formData.vehicle} onChange={handleChange}
                     className="w-full bg-transparent border-b border-brand-border px-0 py-3 text-brand-text focus:outline-none focus:border-brand-primary transition-colors peer placeholder-transparent"
-                    placeholder="Chassis / Model Designation (e.g., 1973 Porsche 911 Carrera RS)"
+                    placeholder="Chassis / Model Designation"
                   />
                   <label className="absolute left-0 -top-3.5 text-xs text-brand-muted transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-primary pointer-events-none">
-                    Chassis / Model Designation
+                    Chassis / Model Designation (e.g., 1973 Porsche 911 Carrera RS)
                   </label>
                 </div>
                 <div className="relative">
@@ -154,21 +156,21 @@ export default function ContactForm() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
               className="flex flex-col gap-8"
             >
               <div>
-                <h3 className="font-serif text-3xl mb-2">Condition</h3>
+                <h3 className="font-serif text-3xl mb-2">Current Condition</h3>
                 <p className="text-brand-muted text-sm">Describe its current state of preservation or decay.</p>
               </div>
               <div className="relative h-full">
                 <textarea 
                   name="condition" required value={formData.condition} onChange={handleChange} rows={5}
                   className="w-full bg-transparent border-b border-brand-border px-0 py-3 text-brand-text focus:outline-none focus:border-brand-primary transition-colors peer placeholder-transparent resize-none"
-                  placeholder="Detail the current state of preservation, structural integrity, and originality."
+                  placeholder="Detail the structural integrity, originality, and any previous restorations."
                 ></textarea>
                 <label className="absolute left-0 -top-3.5 text-xs text-brand-muted transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-primary pointer-events-none">
-                  State of preservation, structural integrity, and originality
+                  Detail the structural integrity, originality, and previous restorations.
                 </label>
               </div>
             </motion.div>
@@ -180,50 +182,22 @@ export default function ContactForm() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
               className="flex flex-col gap-8"
             >
               <div>
-                <h3 className="font-serif text-3xl mb-2">Vision & Constraints</h3>
+                <h3 className="font-serif text-3xl mb-2">Intended Outcome</h3>
                 <p className="text-brand-muted text-sm">What is the ultimate goal for this machine?</p>
               </div>
-              
-              <div className="space-y-8">
-                <div className="relative">
-                  <textarea 
-                    name="vision" required value={formData.vision} onChange={handleChange} rows={3}
-                    className="w-full bg-transparent border-b border-brand-border px-0 py-3 text-brand-text focus:outline-none focus:border-brand-primary transition-colors peer placeholder-transparent resize-none"
-                    placeholder="What is the historical or emotional goal for this commission?"
-                  ></textarea>
-                  <label className="absolute left-0 -top-3.5 text-xs text-brand-muted transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-primary pointer-events-none">
-                    What is the historical or emotional goal for this commission?
-                  </label>
-                </div>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="relative">
-                    <select 
-                      name="budget" required value={formData.budget} onChange={handleChange}
-                      className="w-full bg-transparent border-b border-brand-border px-0 py-3 text-brand-text focus:outline-none focus:border-brand-primary transition-colors appearance-none"
-                    >
-                      <option value="" disabled className="bg-brand-bg text-brand-muted">Anticipated Budget Bracket</option>
-                      <option value="Under $100k" className="bg-brand-bg">Under $100,000</option>
-                      <option value="$100k–$250k" className="bg-brand-bg">$100,000 – $250,000</option>
-                      <option value="$250k–$500k" className="bg-brand-bg">$250,000 – $500,000</option>
-                      <option value="$500k+" className="bg-brand-bg">$500,000+</option>
-                    </select>
-                  </div>
-                  <div className="relative">
-                    <input 
-                      type="text" name="timeline" value={formData.timeline} onChange={handleChange}
-                      className="w-full bg-transparent border-b border-brand-border px-0 py-3 text-brand-text focus:outline-none focus:border-brand-primary transition-colors peer placeholder-transparent"
-                      placeholder="Desired Timeline"
-                    />
-                    <label className="absolute left-0 -top-3.5 text-xs text-brand-muted transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-primary pointer-events-none">
-                      Desired Timeline (e.g., Next year)
-                    </label>
-                  </div>
-                </div>
+              <div className="relative">
+                <textarea 
+                  name="vision" required value={formData.vision} onChange={handleChange} rows={5}
+                  className="w-full bg-transparent border-b border-brand-border px-0 py-3 text-brand-text focus:outline-none focus:border-brand-primary transition-colors peer placeholder-transparent resize-none"
+                  placeholder="What is the historical or emotional goal for this commission?"
+                ></textarea>
+                <label className="absolute left-0 -top-3.5 text-xs text-brand-muted transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-primary pointer-events-none">
+                  Define your vision for the restoration.
+                </label>
               </div>
             </motion.div>
           )}
@@ -234,12 +208,92 @@ export default function ContactForm() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
               className="flex flex-col gap-8"
             >
               <div>
-                <h3 className="font-serif text-3xl mb-2">Collector Information</h3>
-                <p className="text-brand-muted text-sm">Where can we reach you?</p>
+                <h3 className="font-serif text-3xl mb-2">Timeline</h3>
+                <p className="text-brand-muted text-sm">When do you envision driving this vehicle?</p>
+              </div>
+              <div className="relative">
+                <input 
+                  type="text" name="timeline" required value={formData.timeline} onChange={handleChange}
+                  className="w-full bg-transparent border-b border-brand-border px-0 py-3 text-brand-text focus:outline-none focus:border-brand-primary transition-colors peer placeholder-transparent"
+                  placeholder="Desired Timeline"
+                />
+                <label className="absolute left-0 -top-3.5 text-xs text-brand-muted transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-primary pointer-events-none">
+                  Desired Timeline (e.g., Next year, Spring 2028)
+                </label>
+              </div>
+            </motion.div>
+          )}
+
+          {currentStep === 5 && (
+            <motion.div
+              key="step5"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+              className="flex flex-col gap-8"
+            >
+              <div>
+                <h3 className="font-serif text-3xl mb-2">Budget Range</h3>
+                <p className="text-brand-muted text-sm">Our commissions require significant investment. Please define your bracket.</p>
+              </div>
+              <div className="relative mt-4">
+                <select 
+                  name="budget" required value={formData.budget} onChange={handleChange}
+                  className="w-full bg-transparent border-b border-brand-border px-0 py-3 text-brand-text focus:outline-none focus:border-brand-primary transition-colors appearance-none"
+                >
+                  <option value="" disabled className="bg-brand-bg text-brand-muted">Anticipated Budget Bracket</option>
+                  <option value="Under $100k" className="bg-brand-bg">Under $100,000</option>
+                  <option value="$100k–$250k" className="bg-brand-bg">$100,000 – $250,000</option>
+                  <option value="$250k–$500k" className="bg-brand-bg">$250,000 – $500,000</option>
+                  <option value="$500k+" className="bg-brand-bg">$500,000+</option>
+                </select>
+              </div>
+            </motion.div>
+          )}
+
+          {currentStep === 6 && (
+            <motion.div
+              key="step6"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+              className="flex flex-col gap-8"
+            >
+              <div>
+                <h3 className="font-serif text-3xl mb-2">Personal Connection</h3>
+                <p className="text-brand-muted text-sm">Why this vehicle? Why now?</p>
+              </div>
+              <div className="relative">
+                <textarea 
+                  name="connection" required value={formData.connection} onChange={handleChange} rows={5}
+                  className="w-full bg-transparent border-b border-brand-border px-0 py-3 text-brand-text focus:outline-none focus:border-brand-primary transition-colors peer placeholder-transparent resize-none"
+                  placeholder="Share the history or emotional weight this vehicle carries for you."
+                ></textarea>
+                <label className="absolute left-0 -top-3.5 text-xs text-brand-muted transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-primary pointer-events-none">
+                  Share the history or emotional weight this vehicle carries for you.
+                </label>
+              </div>
+            </motion.div>
+          )}
+
+          {currentStep === 7 && (
+            <motion.div
+              key="step7"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+              className="flex flex-col gap-8"
+            >
+              <div>
+                <h3 className="font-serif text-3xl mb-2">Final Statement</h3>
+                <p className="text-brand-muted text-sm">Provide your details to enter the atelier ledger.</p>
               </div>
               <div className="space-y-6 mt-4">
                 <div className="relative">
@@ -287,7 +341,7 @@ export default function ContactForm() {
               <ArrowLeft size={14} /> Back
             </button>
           ) : (
-            <div></div> // Spacer
+            <div></div>
           )}
           
           <button 
@@ -295,8 +349,8 @@ export default function ContactForm() {
             disabled={isSubmitting}
             className="flex items-center gap-2 bg-brand-text text-brand-bg px-8 py-3 uppercase tracking-widest text-xs font-semibold hover:bg-brand-primary hover:text-brand-bg transition-colors disabled:opacity-50"
           >
-            {isSubmitting ? "Submitting..." : currentStep === 4 ? "Submit Inquiry" : "Continue"}
-            {!isSubmitting && currentStep !== 4 && <ArrowRight size={14} />}
+            {isSubmitting ? "Submitting..." : currentStep === 7 ? "Request Private Consultation" : "Continue"}
+            {!isSubmitting && currentStep !== 7 && <ArrowRight size={14} />}
           </button>
         </div>
       </form>

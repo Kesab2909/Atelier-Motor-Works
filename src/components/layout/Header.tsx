@@ -59,7 +59,7 @@ export default function Header() {
               </Link>
             ))}
             <Link href="/portal" className="text-sm uppercase tracking-widest text-brand-muted hover:text-brand-text transition-colors duration-300 ml-4">
-              Client Portal
+              Ledger
             </Link>
           </nav>
 
@@ -101,7 +101,7 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-sm uppercase tracking-widest text-brand-muted hover:text-brand-text transition-colors duration-300"
               >
-                Client Portal
+                Ledger
               </Link>
             </nav>
           </motion.div>
