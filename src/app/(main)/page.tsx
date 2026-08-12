@@ -283,40 +283,72 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. Testimonial Archive */}
-      <section className="py-[160px] md:py-[240px] bg-[#0B0B0B] relative overflow-hidden">
-        <div className="absolute top-0 bottom-0 left-1/2 w-[1px] bg-[#1F1F1F] -translate-x-1/2 hidden md:block"></div>
-        
-        {/* Featured Single Testimonial */}
-        <div className="container mx-auto px-6 md:px-12 relative z-10 text-center max-w-5xl">
-          <div className="text-[#BFA37E] mb-16 flex justify-center">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14.017 21L16.411 14.593H10.222V3H21V12.084L15.918 21H14.017ZM4.819 21L7.213 14.593H1.024V3H11.802V12.084L6.719 21H4.819Z" />
+      {/* 6. Collectors' Ledger — Auto Sliding Testimonial Rail */}
+<section className="py-[140px] bg-[#0B0B0B] border-t border-[#1F1F1F] overflow-hidden">
+  <div className="container mx-auto px-6 md:px-12 mb-14">
+    <span className="text-[#BFA37E] text-[10px] uppercase tracking-[0.3em] font-semibold block mb-4">
+      Collector Archive
+    </span>
+
+    <h2 className="font-serif text-5xl md:text-7xl text-[#F5F2EB] mb-6">
+      The Collectors' Ledger
+    </h2>
+
+    <p className="text-[#C8C2B6] text-base md:text-lg leading-[1.8] max-w-2xl">
+      Eight collectors. Eight philosophies. Eight machines returned to life with
+      uncompromising discipline and historical integrity.
+    </p>
+  </div>
+
+  <div className="relative">
+    <div className="flex gap-6 w-max animate-[marquee_45s_linear_infinite]">
+      {[...testimonials, ...testimonials].map((t, i) => (
+        <div
+          key={i}
+          className="w-[360px] md:w-[420px] bg-[#111111] border border-[#1F1F1F] p-8 flex-shrink-0 hover:border-[#BFA37E]/40 transition-colors duration-700"
+        >
+          <div className="text-[#BFA37E] mb-6">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14.017 21L16.411 14.593H10.222V3H21V12.084L15.918 21H14.017ZM4.819 21L7.213 14.593H1.024V3H11.802V12.084L6.719 21H4.819Z"/>
             </svg>
           </div>
-          <motion.h3 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-            className="font-serif text-4xl md:text-6xl leading-[1.3] text-[#F5F2EB] mb-16"
-          >
-            "They talked me out of repainting the car. At first, I was furious. Now, I realize they saved the soul of my 911. They care more about the car than they do about your ego."
-          </motion.h3>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.2, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          >
-            <p className="uppercase tracking-[0.2em] text-[12px] font-semibold text-[#BFA37E] mb-3">Robert F.</p>
-            <p className="text-[#C8C2B6] text-[10px] uppercase tracking-[0.1em]">First-Time Collector — Commission 028</p>
-          </motion.div>
+
+          <p className="text-[#F5F2EB] font-serif text-xl leading-[1.6] mb-8">
+            “{t.narrative.split('. ').slice(0, 2).join('. ')}.”
+          </p>
+
+          <div className="border-t border-[#1F1F1F] pt-5">
+            <p className="text-[#BFA37E] uppercase tracking-[0.2em] text-[10px] font-semibold">
+              {t.author}
+            </p>
+
+            <p className="text-[#C8C2B6] text-[10px] uppercase tracking-[0.15em] mt-2">
+              {t.archetype}
+            </p>
+
+            <p className="text-[#6E6658] text-[10px] uppercase tracking-[0.15em] mt-1">
+              {t.commission}
+            </p>
+          </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+
+  <style jsx>{`
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+  `}</style>
+</section>
 
       {/* 7. Journal Preview */}
-      <section className="py-[160px] bg-[#0B0B0B] border-t border-[#1F1F1F]">
+      <section className="pt-[100px] pb-[80px] bg-[#0B0B0B] border-t border-[#1F1F1F]">
         <div className="container mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-[#1F1F1F] pb-8">
             <h2 className="font-serif text-5xl md:text-7xl text-[#F5F2EB]">The Archives</h2>
@@ -365,7 +397,7 @@ export default function Home() {
       </section>
 
       {/* 8. Final CTA */}
-      <section className="py-[160px] md:py-[240px] bg-[#0B0B0B] text-center px-6">
+      <section className="pt-[80px] md:pt-[100px] pb-[140px] md:pb-[180px] bg-[#0B0B0B] text-center px-6">
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           <span className="text-[#BFA37E] text-[10px] uppercase tracking-[0.3em] font-semibold mb-8 block">Appointment Only</span>
           <h2 className="font-serif text-5xl md:text-7xl lg:text-8xl mb-16 text-[#F5F2EB] leading-[1.1] tracking-tight">

@@ -188,7 +188,7 @@
     "title": "Commission 009",
     "vehicle": "1988 BMW E30 M3",
     "summary": "Restored for weekend track days and mountain carving.",
-    "heroImage": "/images/classic.jpg",
+    "heroImage": "/images/commissions/commission-014/teardown.jpg",
     "gallery": [],
     "isFeatured": false
   },
@@ -197,7 +197,7 @@
     "title": "Commission 012",
     "vehicle": "1967 Ford Mustang Fastback",
     "summary": "A dark, brooding interpretation of classic American muscle.",
-    "heroImage": "/images/interior.jpg",
+    "heroImage": "/images/commissions/commission-014/fabrication.jpg",
     "gallery": [],
     "isFeatured": false
   },
@@ -206,7 +206,7 @@
     "title": "Commission 004",
     "vehicle": "1978 Porsche 911 SC",
     "summary": "Outlaw build featuring a stripped interior and aggressive stance.",
-    "heroImage": "/images/finish.jpg",
+    "heroImage": "/images/commissions/commission-014/engine-rebuild.jpg",
     "gallery": [],
     "isFeatured": false
   },
@@ -215,7 +215,7 @@
     "title": "Commission 017",
     "vehicle": "1971 Mercedes-Benz 280SL",
     "summary": "A flawless Pagoda restored to factory-original specifications.",
-    "heroImage": "/images/grille.jpg",
+    "heroImage": "/images/commissions/commission-014/dashboard-restoration.jpg",
     "gallery": [],
     "isFeatured": false
   },
@@ -224,7 +224,7 @@
     "title": "Commission 011",
     "vehicle": "1993 Land Rover Defender 90",
     "summary": "Rebuilt from the ground up for reliable overlanding.",
-    "heroImage": "/images/assembly.jpg",
+    "heroImage": "/images/commissions/commission-014/metalwork-detail.jpg",
     "gallery": [],
     "isFeatured": false
   }

@@ -9,43 +9,43 @@ const steps = [
     title: "Discovery & Provenance", 
     desc: "Every commission begins with an interrogation of history. We dissect your vision, analyze the donor vehicle's provenance, and establish the mechanical and aesthetic constraints. We do not accept every project; we only take on commissions where we can add undisputed value.",
     annotation: "Archival Research • Authenticity Verification",
-    img: "/images/philosophy.jpg"
+    img: "/images/restoration/discovery.jpg"
   },
   { 
     title: "Forensic Documentation", 
     desc: "Before a single bolt is turned, the vehicle undergoes forensic documentation. Hundreds of photographs are taken. Wiring harnesses are mapped. Original paint thickness is measured. We must understand exactly what the vehicle was before we decide what it will become.",
     annotation: "Micro-metric Measurement • Digital Registry Entry",
-    img: "/images/blur.jpg"
+    img: "/images/workshop/workshop-wide.jpg"
   },
   { 
     title: "Methodical Teardown", 
     desc: "The teardown is methodical. The vehicle is stripped to its bare chassis. Every component is bagged, tagged, and entered into our digital registry. This is where we uncover the hidden sins of past mechanics and the true extent of the structural degradation.",
     annotation: "Component Cataloging • Degradation Analysis",
-    img: "/images/inspection.jpg"
+    img: "/images/restoration/bare-metal.jpg"
   },
   { 
     title: "Metal Reconstruction", 
     desc: "Rust is excised with surgical precision. Weak points in the original chassis are reinforced using modern metallurgy. We recreate unobtainable panels by hand on the English wheel. The body is aligned to tolerances far tighter than the original factory specifications.",
     annotation: "Lead-Loading • Period-Correct Spot Welding",
-    img: "/images/welding.jpg"
+    img: "/images/restoration/panel-shaping.jpg"
   },
   { 
     title: "Powertrain Reanimation", 
     desc: "Engines are not merely rebuilt; they are blueprinted. We balance rotating assemblies to the gram. Transmissions are re-geared for modern traffic. Suspension geometry is corrected. The soul of the machine is re-engineered for another fifty years of abuse.",
     annotation: "Zero-Hour Tolerances • Flow-Bench Calibration",
-    img: "/images/engine.jpg"
+    img: "/images/workshop/workshop-engine-assembly.jpg"
   },
   { 
     title: "Surface & Tactile Finish", 
     desc: "Bare metal is sealed in epoxy primer before enduring hundreds of hours of block sanding. Period-correct paints are applied, or custom hues are mixed to your exact specification. Interiors are re-trimmed using authentic leather and historically accurate textiles.",
     annotation: "Epoxy Sealing • Period-Correct Weaves",
-    img: "/images/assembly.jpg"
+    img: "/images/restoration/paint-booth.jpg"
   },
   { 
     title: "Road Validation", 
     desc: "After 500 miles of shakedown testing, the vehicle is presented to you. You receive the keys, the documentation dossier, and a machine that is fundamentally better than the day it left the factory decades ago.",
     annotation: "500-Mile Shakedown • Dossier Finalization",
-    img: "/images/grille.jpg"
+    img: "/images/restoration/final-reveal.jpg"
   }
 ];
 

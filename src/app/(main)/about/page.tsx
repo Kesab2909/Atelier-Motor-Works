@@ -38,7 +38,7 @@ export default function AboutPage() {
               className="relative h-[600px] w-full border border-brand-border"
             >
               <Image 
-                src="/images/gauges.jpg" 
+                src="/images/interior/dashboard-gauges.jpg" 
                 alt="Founder in Workshop" 
                 fill 
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -81,9 +81,9 @@ export default function AboutPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              "/images/grille.jpg",
-              "/images/blur.jpg",
-              "/images/macro.jpg"
+              "/images/workshop/workshop-metalwork.jpg",
+              "/images/workshop/workshop-wide.jpg",
+              "/images/interior/leather-seat.jpg"
             ].map((img, i) => (
               <motion.div 
                 key={i}
