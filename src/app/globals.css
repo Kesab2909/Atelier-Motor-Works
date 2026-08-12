@@ -2,32 +2,30 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --color-brand-bg: #0F0F0F;
-  --color-brand-surface: #1A1A1A;
-  --color-brand-elevated: #242424;
-  --color-brand-primary: #C9A96E;
-  --color-brand-primary-hover: #B8975A;
-  --color-brand-text: #EBE8E0;
-  --color-brand-muted: #A8A39A;
-  --color-brand-border: #2A2A2A;
-  --color-brand-red: #C1171C;
+  --color-brand-bg: #0B0B0B;
+  --color-brand-surface: #121212;
+  --color-brand-elevated: #181818;
+  --color-brand-primary: #BFA37E;
+  --color-brand-primary-hover: #A68D6A;
+  --color-brand-text: #F5F2EB;
+  --color-brand-muted: #C8C2B6;
+  --color-brand-border: #1F1F1F;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-prata), ui-serif, Georgia, serif;
 
-  --animate-loading-bar: loading-bar 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  --animate-fade-in-slow: fade-in-slow 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   
-  @keyframes loading-bar {
-    0% { transform: scaleX(0); }
-    50% { transform: scaleX(1); }
-    100% { transform: scaleX(0); transform-origin: right; }
+  @keyframes fade-in-slow {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
   }
 }
 
 @layer base {
   :root {
-    --background: #0F0F0F;
-    --foreground: #EBE8E0;
+    --background: #0B0B0B;
+    --foreground: #F5F2EB;
   }
   
   body {
@@ -44,8 +42,23 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('data:image/svg+xml;utf8,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)" opacity="0.03"/%3E%3C/svg%3E');
+    background-image: url('data:image/svg+xml;utf8,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)" opacity="0.04"/%3E%3C/svg%3E');
     pointer-events: none;
     z-index: 50;
+  }
+}
+
+@layer utilities {
+  .editorial-grid {
+    @apply grid grid-cols-4 md:grid-cols-12 gap-6 md:gap-8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

@@ -32,8 +32,8 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled ? "bg-brand-bg/80 backdrop-blur-md border-b border-brand-border py-4" : "bg-transparent py-8"
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
+          isScrolled ? "bg-brand-bg/80 backdrop-blur-md border-b border-brand-border/50 py-4" : "bg-transparent py-8"
         }`}
       >
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
@@ -42,9 +42,7 @@ export default function Header() {
             <span className="text-[0.65rem] uppercase tracking-widest text-brand-muted mt-1 font-semibold">Motor Works</span>
           </Link>
 
-          <div className="hidden lg:block ml-8">
-            <CapacityIndicator />
-          </div>
+          <div className="hidden lg:block ml-8 flex-grow"></div>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center space-x-8">

@@ -21,43 +21,43 @@ const servicesData: Record<string, { title: string, subtitle: string, descriptio
     title: "Concours Restoration",
     subtitle: "Absolute authenticity, down to the original factory chalk marks.",
     description: "Our concours restorations are research-driven archaeological endeavors. We don't just make a car look new; we return it to the exact state it left the factory floor, utilizing period-correct materials, plating techniques, and assembly methods.",
-    image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+    image: "/images/classic.jpg"
   },
   "mechanical-preservation": {
     title: "Mechanical Preservation",
     subtitle: "Protecting the soul of a survivor.",
     description: "For vehicles that have survived decades in their original state, restoration is often a crime against history. Our preservation service stabilizes decay, rebuilds mechanicals invisibly, and protects the hard-earned patina of a true survivor.",
-    image: "https://images.unsplash.com/photo-1542282088-fe8426682b8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+    image: "/images/philosophy.jpg"
   },
   "bespoke-commission": {
     title: "Bespoke Commission",
     subtitle: "Your vision, engineered to perfection.",
     description: "For the collector who desires a machine tailored to their exact ergonomic and aesthetic preferences. We re-engineer classics with subtle modern enhancements, creating a vehicle that honors its heritage while performing flawlessly in the modern era.",
-    image: "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+    image: "/images/inspection.jpg"
   },
   "interior-trim": {
     title: "Interior Trim & Upholstery",
     subtitle: "Period-correct textiles and uncompromising craftsmanship.",
     description: "Using original suppliers for leatherette, corduroy, and houndstooth, our interior shop rebuilds seats, dashboards, and headliners to factory specification, ensuring the tactile and olfactory experience of a brand new classic.",
-    image: "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+    image: "/images/interior.jpg"
   },
   "engine-rebuild": {
     title: "Engine Rebuild & Calibration",
     subtitle: "The beating heart of the machine.",
     description: "From air-cooled flat-sixes to complex mechanical fuel injection systems, our engine room measures tolerances in microns. We balance rotating assemblies perfectly and run every engine on a dynamometer before it meets the chassis.",
-    image: "https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+    image: "/images/engine.jpg"
   },
   "metal-fabrication": {
     title: "Metal Fabrication",
     subtitle: "Shaping steel with traditional techniques.",
     description: "Rust repair is executed using TIG-welded butt joints and lead-loading, exactly as the factory did. We hand-form complex panels on the English wheel when original replacement parts are unavailable or inadequate.",
-    image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+    image: "/images/hero.jpg"
   },
   "historic-research": {
     title: "Historic Research & Documentation",
     subtitle: "Uncovering the provenance of significant chassis.",
     description: "A vehicle's value is deeply tied to its history. Our research team scours factory archives, period racing records, and ownership chains to build a comprehensive, indisputable dossier of your vehicle's life.",
-    image: "https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+    image: "/images/metalwork.jpg"
   }
 };
 

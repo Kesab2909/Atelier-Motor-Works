@@ -2,31 +2,61 @@
   {
     "quote": "Atelier North didn’t just restore my Porsche. They restored my father’s memory.",
     "author": "James R.",
-    "commission": "Commission 014"
+    "commission": "Commission 014",
+    "archetype": "Family Heirloom Owner"
   },
   {
     "quote": "The level of mechanical obsession here is frightening. I’ve never seen a team so dedicated to the invisible details.",
-    "author": "William T.",
-    "commission": "Commission 009"
+    "author": "Dr. William T.",
+    "commission": "Commission 009",
+    "archetype": "Surgeon"
   },
   {
-    "quote": "It is not a workshop. It is a sanctuary for machines that deserve a second life.",
+    "quote": "It is not a workshop. It is a sanctuary for machines that deserve a second life. The Pagoda feels exactly as it must have in 1971.",
     "author": "Elena M.",
-    "commission": "Commission 017"
+    "commission": "Commission 017",
+    "archetype": "Architect"
   },
   {
     "quote": "I handed them a chassis that most shops would have scrapped. Eighteen months later, I drove out a masterpiece that felt completely period-correct yet infinitely more reliable. They understand the soul of a vehicle.",
     "author": "Alistair B.",
-    "commission": "Commission 022"
+    "commission": "Commission 022",
+    "archetype": "Industrial Designer"
   },
   {
     "quote": "There is a reverence in their process. They don't just bolt on new parts; they interrogate the history of the car and preserve what matters. The result is a machine that feels alive.",
     "author": "Jonathan V.",
-    "commission": "Commission 011"
+    "commission": "Commission 011",
+    "archetype": "Vintage Racer"
   },
   {
     "quote": "Other builders create show cars. Atelier North creates time machines. The smell of the cabin, the precise weight of the controls—it is exactly as I remember it in 1974, perhaps even better.",
     "author": "Marcus C.",
-    "commission": "Commission 004"
+    "commission": "Commission 004",
+    "archetype": "Porsche Collector"
+  },
+  {
+    "quote": "When we were preparing the 280SL for the exhibition, Atelier North's documentation and provenance research were just as impressive as their metalwork. They operate at an archival standard.",
+    "author": "Sarah H.",
+    "commission": "Consultation",
+    "archetype": "Museum Curator"
+  },
+  {
+    "quote": "I demand perfection in my own work, and I expect it from my partners. The engine they built for my E30 M3 revs with a ferocity I've never experienced in a classic BMW.",
+    "author": "David K.",
+    "commission": "Commission 009",
+    "archetype": "BMW Enthusiast"
+  },
+  {
+    "quote": "They talked me out of repainting the car. At first, I was furious. Now, I realize they saved the soul of my 911. They care more about the car than they do about your ego.",
+    "author": "Robert F.",
+    "commission": "Commission 028",
+    "archetype": "First-Time Collector"
+  },
+  {
+    "quote": "It is rare to find craftsmen who possess both technical brilliance and historical restraint. Atelier North is one of the few places I trust with my most significant acquisitions.",
+    "author": "Thomas L.",
+    "commission": "Multiple Commissions",
+    "archetype": "Concours Judge"
   }
 ]

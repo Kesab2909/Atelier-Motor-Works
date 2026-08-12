@@ -147,10 +147,10 @@ export default function DashboardPage() {
               <h3 className="font-serif text-2xl mb-8 border-b border-brand-border pb-4">Latest Dispatches</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative aspect-square w-full">
-                  <Image src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Engine block" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+                  <Image src="/images/engine.jpg" alt="Engine block" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
                 </div>
                 <div className="relative aspect-square w-full">
-                  <Image src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Suspension detail" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+                  <Image src="/images/metalwork.jpg" alt="Suspension detail" fill className="object-cover grayscale hover:grayscale-0 transition-all duration-700" />
                 </div>
               </div>
             </div>

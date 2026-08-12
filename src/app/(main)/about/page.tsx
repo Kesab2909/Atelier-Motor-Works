@@ -38,7 +38,7 @@ export default function AboutPage() {
               className="relative h-[600px] w-full border border-brand-border"
             >
               <Image 
-                src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                src="/images/gauges.jpg" 
                 alt="Founder in Workshop" 
                 fill 
                 className="object-cover grayscale" 
@@ -80,9 +80,9 @@ export default function AboutPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-              "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-              "https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              "/images/grille.jpg",
+              "/images/blur.jpg",
+              "/images/macro.jpg"
             ].map((img, i) => (
               <motion.div 
                 key={i}

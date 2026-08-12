@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import settings from "@/data/settings.json";
+import CapacityIndicator from "@/components/ui/CapacityIndicator";
 
 export default function WaitlistPage() {
   return (
@@ -33,20 +33,9 @@ export default function WaitlistPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20"
+            className="mb-20"
           >
-            <div className="bg-brand-surface p-12 border border-brand-border">
-              <p className="text-brand-muted text-xs uppercase tracking-widest mb-4">Current Waitlist</p>
-              <p className="font-serif text-5xl text-brand-text">{settings.waitlist.duration}</p>
-            </div>
-            <div className="bg-brand-surface p-12 border border-brand-border">
-              <p className="text-brand-muted text-xs uppercase tracking-widest mb-4">Annual Capacity</p>
-              <p className="font-serif text-5xl text-brand-text">{settings.waitlist.annualCapacity}</p>
-            </div>
-            <div className="bg-brand-surface p-12 border border-brand-border">
-              <p className="text-brand-muted text-xs uppercase tracking-widest mb-4">Avg. Commission</p>
-              <p className="font-serif text-5xl text-brand-text">{settings.waitlist.averageCommission}</p>
-            </div>
+            <CapacityIndicator />
           </motion.div>
 
           <motion.div

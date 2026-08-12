@@ -9,6 +9,10 @@ import MotionProvider from "@/components/ui/MotionProvider";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const prata = Prata({ weight: "400", subsets: ["latin"], variable: "--font-prata" });
 
+export const viewport: import('next').Viewport = {
+  themeColor: "#0c0c0c",
+};
+
 export const metadata: Metadata = {
   title: {
     default: "Atelier North Motor Works | Vintage Automotive Restoration",
@@ -38,7 +42,8 @@ export const metadata: Metadata = {
     title: "Atelier North Motor Works",
     description: "Bespoke automotive preservation for collectors.",
     images: ["/images/og-image.jpg"],
-  }
+  },
+  manifest: "/manifest.json",
 };
 
 const jsonLd = {

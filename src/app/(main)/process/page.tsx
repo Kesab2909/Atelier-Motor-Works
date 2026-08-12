@@ -8,37 +8,37 @@ const steps = [
   { 
     title: "Discovery", 
     desc: "Every commission begins with a conversation. We dissect your vision, analyze the donor vehicle's provenance, and establish the mechanical and aesthetic constraints. We do not accept every project; we only take on commissions where we can add undisputed value.",
-    img: "https://images.unsplash.com/photo-1542282088-fe8426682b8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+    img: "/images/philosophy.jpg"
   },
   { 
     title: "Documentation", 
     desc: "Before a single bolt is turned, the vehicle undergoes forensic documentation. Hundreds of photographs are taken. Wiring harnesses are mapped. Original paint thickness is measured. We must understand exactly what the vehicle was before we decide what it will become.",
-    img: "https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+    img: "/images/blur.jpg"
   },
   { 
     title: "Disassembly", 
     desc: "The teardown is methodical. The vehicle is stripped to its bare chassis. Every component is bagged, tagged, and entered into our digital registry. This is where we uncover the hidden sins of past mechanics and the true extent of the structural degradation.",
-    img: "https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+    img: "/images/welding.jpg"
   },
   { 
     title: "Fabrication", 
     desc: "Rust is excised with surgical precision. Weak points in the original chassis are reinforced using modern metallurgy. We recreate unobtainable panels by hand on the English wheel. The body is aligned to tolerances far tighter than the original factory specifications.",
-    img: "https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+    img: "/images/engine.jpg"
   },
   { 
     title: "Mechanical", 
     desc: "Engines are not merely rebuilt; they are blueprinted. We balance rotating assemblies to the gram. Transmissions are re-geared for modern traffic. Suspension geometry is corrected. The soul of the machine is re-engineered for another fifty years of abuse.",
-    img: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+    img: "/images/finish.jpg"
   },
   { 
     title: "Finish", 
     desc: "Bare metal is sealed in epoxy primer before enduring hundreds of hours of block sanding. Period-correct paints are applied, or custom hues are mixed to your exact specification. Interiors are re-trimmed in Scottish leather and German square-weave carpet.",
-    img: "https://images.unsplash.com/photo-1580274455191-1c62238fa333?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+    img: "/images/assembly.jpg"
   },
   { 
     title: "Delivery", 
     desc: "After 500 miles of shakedown testing, the vehicle is presented to you. You receive the keys, the documentation dossier, and a machine that is fundamentally better than the day it left the factory decades ago.",
-    img: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+    img: "/images/grille.jpg"
   }
 ];
 

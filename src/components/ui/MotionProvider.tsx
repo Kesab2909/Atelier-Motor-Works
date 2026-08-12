@@ -5,7 +5,10 @@ import { ReactNode } from "react";
 
 export default function MotionProvider({ children }: { children: ReactNode }) {
   return (
-    <MotionConfig reducedMotion="user">
+    <MotionConfig 
+      reducedMotion="user"
+      transition={{ ease: [0.22, 1, 0.36, 1], duration: 0.8 }}
+    >
       {children}
     </MotionConfig>
   );

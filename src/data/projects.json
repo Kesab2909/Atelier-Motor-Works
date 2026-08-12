@@ -2,34 +2,53 @@
   {
     "slug": "commission-014",
     "title": "Commission 014",
-    "vehicle": "1973 Porsche 911T",
+    "vehicle": "1973 Porsche 911 Carrera RS",
     "summary": "A full concourse-level restoration emphasizing mechanical purity and patina preservation.",
     "duration": "16 months",
-    "budget": "$42,500",
-    "heroImage": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    "budget": "$125,000+",
+    "heroImage": "/images/hero.jpg",
     "gallery": [
-      "https://images.unsplash.com/photo-1542282088-fe8426682b8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1580274455191-1c62238fa333?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+      "/images/philosophy.jpg",
+      "/images/metalwork.jpg",
+      "/images/engine.jpg"
     ],
     "specs": {
-      "chassis": "Authentic '73",
+      "chassis": "Authentic '73 RS",
       "engine": "Hand-built 2.7L Flat-Six",
       "interior": "Period-correct Pepita cloth"
+    },
+    "buildSheet": {
+      "vin": "9113600412",
+      "engineType": "Type 911/83 (2.7L)",
+      "transmission": "Type 915/08",
+      "paintCode": "Light Yellow (117)",
+      "deliveryDate": "April 1973"
     },
     "story": "Commission 014 arrived as a forgotten relic in a dusty barn. The goal wasn't just to rebuild it, but to resurrect its soul. We preserved the exterior patina while completely re-engineering the powertrain and chassis for modern reliability without sacrificing the analog driving experience.",
     "sections": [
       {
-        "heading": "The Provenance",
-        "text": "Discovered in a temperature-controlled hangar in Geneva, Commission 014 arrived at our atelier as a matching-numbers rolling chassis. The vehicle had been off the road since 1989, preserved in a state of suspended animation by its second owner, a prominent Swiss horologist. Our mandate was not simply to repair, but to resurrect the machine while preserving the irreplaceable soul etched into its chassis over fifty years."
+        "heading": "Ownership History & Provenance",
+        "text": "Discovered in a temperature-controlled hangar in Geneva, Commission 014 arrived at our atelier as a matching-numbers rolling chassis. The vehicle had been off the road since 1989, preserved in a state of suspended animation by its second owner, a prominent Swiss horologist. The unbroken chain of ownership and original Swiss registration documents confirmed its elite status."
       },
       {
-        "heading": "Mechanical Resurrection",
-        "text": "The beating heart of the RS, the 2.7-liter mechanically injected flat-six, required microscopic precision. The magnesium case was completely cleaned, measured, and line-bored back to zero-hour tolerances. Every fastener, bracket, and linkage was replated in period-correct yellow zinc or black oxide."
+        "heading": "Restoration Milestones & Timeline",
+        "text": "The project spanned 16 months of continuous labor, logged at 3,420 hours. \n\n• Month 1-2: Forensic teardown and chassis documentation.\n• Month 3-5: Media blasting and structural metalwork.\n• Month 6-9: Engine blueprinting and transaxle rebuild.\n• Month 10-12: Wiring harness fabrication and interior trimming.\n• Month 13-16: Final assembly, suspension tuning, and 500-mile shakedown."
       },
       {
-        "heading": "Tactile Authenticity",
-        "text": "The cabin is a study in tactile feedback and minimalist purpose. The lightweight Recaro sport seats were completely dismantled, their steel frames powder-coated, and the horsehair padding replaced with modern, durable equivalents that match original densities. Upholstered in correct grain black leatherette with Perlon corduroy inserts, the aroma inside the cabin instantly transports the driver to Stuttgart, 1973."
+        "heading": "Fabrication Photography & Metalwork",
+        "text": "Decades of exposure necessitated extensive structural intervention. The chassis was media-blasted to bare metal, revealing areas of oxidation in the longitudinals and suspension pickup points. Using factory-gauge steel and period-correct spot-welding techniques, we fabricated replacement panels that perfectly mimic the original factory seams. Every repair was lead-loaded, avoiding modern plastic fillers entirely."
+      },
+      {
+        "heading": "Engine Rebuild Documentation",
+        "text": "The beating heart of the RS, the 2.7-liter mechanically injected flat-six, required microscopic precision. The magnesium case was completely cleaned, measured, and line-bored back to zero-hour tolerances. The mechanical fuel injection (MFI) pump was recalibrated on a specialized flow bench to match the original factory delivery curves. Every fastener, bracket, and linkage was replated in period-correct yellow zinc or black oxide."
+      },
+      {
+        "heading": "Paint and Leather Specifications",
+        "text": "While the exterior patina was largely preserved and stabilized, the interior required a complete re-trim. We sourced authentic, correct-grain black leatherette from Germany, matching the exact weight and texture used in 1973. The seat inserts feature genuine Perlon corduroy, and the headliner was replaced with the correct ivory perforated vinyl. The tactile interface—the steering wheel and shift knob—was wrapped in full-grain leather, providing the exact grip required to command the unassisted front end."
+      },
+      {
+        "heading": "Final Delivery & Valuation Statement",
+        "text": "Commission 014 was delivered to its new custodian in the fall of 2026. The vehicle was accompanied by a fully documented restoration dossier, authenticating every hour of labor and every replacement component. In its current state, it represents one of the most mechanically perfect, patina-preserved early 911s in existence. Independent appraisers have provided a conservative private valuation significantly exceeding the original build cost, cementing its status as an investment-grade artifact."
       }
     ],
     "isFeatured": true
@@ -39,7 +58,7 @@
     "title": "Commission 009",
     "vehicle": "1988 BMW E30 M3",
     "summary": "Restored for weekend track days and mountain carving.",
-    "heroImage": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    "heroImage": "/images/classic.jpg",
     "gallery": [],
     "isFeatured": false
   },
@@ -48,7 +67,7 @@
     "title": "Commission 012",
     "vehicle": "1967 Ford Mustang Fastback",
     "summary": "A dark, brooding interpretation of classic American muscle.",
-    "heroImage": "https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    "heroImage": "/images/interior.jpg",
     "gallery": [],
     "isFeatured": false
   },
@@ -57,7 +76,7 @@
     "title": "Commission 004",
     "vehicle": "1978 Porsche 911 SC",
     "summary": "Outlaw build featuring a stripped interior and aggressive stance.",
-    "heroImage": "https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    "heroImage": "/images/finish.jpg",
     "gallery": [],
     "isFeatured": false
   },
@@ -66,7 +85,7 @@
     "title": "Commission 017",
     "vehicle": "1971 Mercedes-Benz 280SL",
     "summary": "A flawless Pagoda restored to factory-original specifications.",
-    "heroImage": "https://images.unsplash.com/photo-1580274455191-1c62238fa333?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    "heroImage": "/images/grille.jpg",
     "gallery": [],
     "isFeatured": false
   },
@@ -75,7 +94,7 @@
     "title": "Commission 011",
     "vehicle": "1993 Land Rover Defender 90",
     "summary": "Rebuilt from the ground up for reliable overlanding.",
-    "heroImage": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    "heroImage": "/images/assembly.jpg",
     "gallery": [],
     "isFeatured": false
   }

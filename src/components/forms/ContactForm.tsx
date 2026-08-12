@@ -117,10 +117,10 @@ export default function ContactForm() {
                   <input 
                     type="text" name="vehicle" required value={formData.vehicle} onChange={handleChange}
                     className="w-full bg-transparent border-b border-brand-border px-0 py-3 text-brand-text focus:outline-none focus:border-brand-primary transition-colors peer placeholder-transparent"
-                    placeholder="Make & Model (e.g., Porsche 911T)"
+                    placeholder="Chassis / Model Designation (e.g., 1973 Porsche 911 Carrera RS)"
                   />
                   <label className="absolute left-0 -top-3.5 text-xs text-brand-muted transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-primary pointer-events-none">
-                    Make & Model (e.g., Porsche 911T)
+                    Chassis / Model Designation
                   </label>
                 </div>
                 <div className="relative">
@@ -165,10 +165,10 @@ export default function ContactForm() {
                 <textarea 
                   name="condition" required value={formData.condition} onChange={handleChange} rows={5}
                   className="w-full bg-transparent border-b border-brand-border px-0 py-3 text-brand-text focus:outline-none focus:border-brand-primary transition-colors peer placeholder-transparent resize-none"
-                  placeholder="Is it running? Does it have original paint? Rust?"
+                  placeholder="Detail the current state of preservation, structural integrity, and originality."
                 ></textarea>
                 <label className="absolute left-0 -top-3.5 text-xs text-brand-muted transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-primary pointer-events-none">
-                  Is it running? Does it have original paint? Rust?
+                  State of preservation, structural integrity, and originality
                 </label>
               </div>
             </motion.div>
@@ -193,10 +193,10 @@ export default function ContactForm() {
                   <textarea 
                     name="vision" required value={formData.vision} onChange={handleChange} rows={3}
                     className="w-full bg-transparent border-b border-brand-border px-0 py-3 text-brand-text focus:outline-none focus:border-brand-primary transition-colors peer placeholder-transparent resize-none"
-                    placeholder="Describe your vision"
+                    placeholder="What is the historical or emotional goal for this commission?"
                   ></textarea>
                   <label className="absolute left-0 -top-3.5 text-xs text-brand-muted transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-brand-primary pointer-events-none">
-                    Describe your vision
+                    What is the historical or emotional goal for this commission?
                   </label>
                 </div>
                 
