@@ -1,0 +1,18 @@
+{
+  "siteName": "Atelier North Motor Works",
+  "tagline": "Metal. Memory. Mastery.",
+  "description": "Bespoke automotive preservation for collectors, enthusiasts, and legacy owners.",
+  "location": "Asheville, North Carolina",
+  "phone": "+1 (828) 555-0148",
+  "email": "inquiries@ateliernorth.com",
+  "instagram": "@ateliernorth",
+  "waitlist": {
+    "duration": "14 Months",
+    "annualCapacity": 18,
+    "averageCommission": "$38,000"
+  },
+  "seo": {
+    "title": "Atelier North Motor Works | Vintage Automotive Restoration",
+    "description": "A boutique automotive preservation atelier in Asheville, NC specializing in air-cooled Porsche, vintage BMW, and classic American Muscle."
+  }
+}
