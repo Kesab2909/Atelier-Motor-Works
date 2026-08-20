@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/portal/dashboard', '/api/'],
     },
-    sitemap: 'https://ateliernorth.com/sitemap.xml',
+    sitemap: 'https://atelier-motor-works.vercel.app/sitemap.xml',
   };
 }

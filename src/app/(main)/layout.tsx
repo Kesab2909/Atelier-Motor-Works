@@ -19,12 +19,12 @@ export const metadata: Metadata = {
     template: "%s | Atelier North Motor Works"
   },
   description: "Bespoke automotive preservation and restoration for collectors, enthusiasts, and legacy owners specializing in air-cooled and vintage analog machines.",
-  metadataBase: new URL("https://ateliernorth.com"),
+  metadataBase: new URL("https://atelier-motor-works.vercel.app"),
   keywords: ["vintage automotive restoration", "air-cooled porsche", "concours restoration", "mechanical preservation", "classic car restoration", "boutique restoration agency"],
   openGraph: {
     title: "Atelier North Motor Works",
     description: "Bespoke automotive preservation for collectors, enthusiasts, and legacy owners.",
-    url: "https://ateliernorth.com",
+    url: "https://atelier-motor-works.vercel.app",
     siteName: "Atelier North Motor Works",
     locale: "en_US",
     type: "website",
@@ -50,8 +50,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "AutoRepair",
   "name": "Atelier North Motor Works",
-  "image": "https://ateliernorth.com/images/og-image.jpg",
-  "url": "https://ateliernorth.com",
+  "image": "https://atelier-motor-works.vercel.app/images/og-image.jpg",
+  "url": "https://atelier-motor-works.vercel.app",
   "telephone": "+1-555-0198",
   "priceRange": "$$$$",
   "address": {

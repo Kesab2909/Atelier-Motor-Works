@@ -3,7 +3,7 @@ import projects from "@/data/projects.json";
 import articles from "@/data/articles.json";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://ateliernorth.com';
+  const baseUrl = 'https://atelier-motor-works.vercel.app';
 
   const staticRoutes = [
     '',
